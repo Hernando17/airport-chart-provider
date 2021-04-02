@@ -1,29 +1,6 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Startup HTML-5 Template </title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="manifest" href="site.webmanifest">
-		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+<?= $this->include('layout/header'); ?>
 
-		<!-- CSS here -->
-            <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-            <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-            <link rel="stylesheet" href="assets/css/slicknav.css">
-            <link rel="stylesheet" href="assets/css/flaticon.css">
-            <link rel="stylesheet" href="assets/css/animate.min.css">
-            <link rel="stylesheet" href="assets/css/magnific-popup.css">
-            <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
-            <link rel="stylesheet" href="assets/css/themify-icons.css">
-            <link rel="stylesheet" href="assets/css/slick.css">
-            <link rel="stylesheet" href="assets/css/nice-select.css">
-            <link rel="stylesheet" href="assets/css/style.css">
-   </head>
-
-   <body>
+<body>
     <!-- Preloader Start -->
     <div id="preloader-active">
         <div class="preloader d-flex align-items-center justify-content-center">
@@ -36,60 +13,8 @@
         </div>
     </div>
     <!-- Preloader Start -->
-    <header>
-        <!-- Header Start -->
-       <div class="header-area header_area header-transparent">
-            <div class="main-header">
-               <div class="header-bottom  header-sticky">
-                    <div class="container-fluid">
-                        <div class="row align-items-center">
-                            <!-- Logo -->
-                            <div class="col-xl-2 col-lg-1 col-md-1">
-                                <div class="logo">
-                                  <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
-                                </div>
-                            </div>
-                            <div class="col-xl-8 col-lg-8 col-md-8">
-                                <!-- Main-menu -->
-                                <div class="main-menu f-right d-none d-lg-block">
-                                    <nav> 
-                                        <ul id="navigation">                                                                                                                                     
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="about.html">About</a></li>
-                                            <li><a href="services.html">Services</a></li>
-                                            <li><a href="work.html">Works</a></li>
-                                            <li><a href="blog.html">Blog</a>
-                                                <ul class="submenu">
-                                                    <li><a href="blog.html">Blog</a></li>
-                                                    <li><a href="single-blog.html">Blog Details</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="#">Pages</a>
-                                                <ul class="submenu">
-                                                    <li><a href="elements.html">Element</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>             
-                            <div class="col-xl-2 col-lg-3 col-md-3">
-                                <div class="header-right-btn f-right d-none d-lg-block">
-                                    <a href="#" class="btn header-btn">Contact Now</a>
-                                </div>
-                            </div>
-                            <!-- Mobile Menu -->
-                            <div class="col-12">
-                                <div class="mobile_menu d-block d-lg-none"></div>
-                            </div>
-                        </div>
-                    </div>
-               </div>
-            </div>
-       </div>
-        <!-- Header End -->
-    </header>
+
+    <?= $this->include('layout/navbar'); ?>
     <main>
 
         <!-- slider Area Start-->
@@ -98,47 +23,47 @@
                 <!-- Single Slider -->
                 <div class="single-slider">
                     <div class="slider-cap-wrapper">
-                          <div class="hero__img">
-                            <img src="assets/img/hero/hero_img.jpg" alt=""  data-animation="fadeInRight" data-transition-duration="5s">
-                          </div>
-                          <div class="hero__caption">
-                              <h1 data-animation="fadeInLeft" data-delay=".4s">Business Synergy via <br>Robust Strategies</h1>
-                              <p data-animation="fadeInLeft" data-delay=".6s">Aasrem dfgum dolor sivst amet, consectetur adipisicing elitvde, sed dvo eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad micnim veniam, quis nostrud exercita.</p>
-                              <!-- Hero Btn -->
-                              <a href="#" class="hero-btn"  data-animation="fadeInLeft" data-delay=".9s" >
-                                  View project
-                                  <!-- Arrow SVG icon -->
-                                  <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                  viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                                 <path d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068
+                        <div class="hero__img">
+                            <img src="assets/img/hero/hero_img.jpg" alt="" data-animation="fadeInRight" data-transition-duration="5s">
+                        </div>
+                        <div class="hero__caption">
+                            <h1 data-animation="fadeInLeft" data-delay=".4s">Business Synergy via <br>Robust Strategies</h1>
+                            <p data-animation="fadeInLeft" data-delay=".6s">Aasrem dfgum dolor sivst amet, consectetur adipisicing elitvde, sed dvo eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad micnim veniam, quis nostrud exercita.</p>
+                            <!-- Hero Btn -->
+                            <a href="#" class="hero-btn" data-animation="fadeInLeft" data-delay=".9s">
+                                View project
+                                <!-- Arrow SVG icon -->
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <path d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068
                                          c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557
                                          l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104
-                                         c0.006-0.006,0.011-0.013,0.018-0.019C513.968,262.339,513.943,249.635,506.134,241.843z"/> </svg>
-                             </a>
-                          </div>
+                                         c0.006-0.006,0.011-0.013,0.018-0.019C513.968,262.339,513.943,249.635,506.134,241.843z" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <!-- Single Slider -->
                 <div class="single-slider">
                     <div class="slider-cap-wrapper">
-                          <div class="hero__img">
-                            <img src="assets/img/hero/hero_img2.jpg" alt=""  data-animation="fadeInRight" data-transition-duration="5s">
-                          </div>
-                          <div class="hero__caption">
-                              <h1 data-animation="fadeInLeft" data-delay=".4s">Business Synergy via <br>Robust Strategies</h1>
-                              <p data-animation="fadeInLeft" data-delay=".6s">Aasrem dfgum dolor sivst amet, consectetur adipisicing elitvde, sed dvo eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad micnim veniam, quis nostrud exercita.</p>
-                              <!-- Hero Btn -->
-                              <a href="#" class="hero-btn"  data-animation="fadeInLeft" data-delay=".9s" >
-                                  View project
-                                  <!-- Arrow SVG icon -->
-                                  <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                  viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                                 <path d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068
+                        <div class="hero__img">
+                            <img src="assets/img/hero/hero_img2.jpg" alt="" data-animation="fadeInRight" data-transition-duration="5s">
+                        </div>
+                        <div class="hero__caption">
+                            <h1 data-animation="fadeInLeft" data-delay=".4s">Business Synergy via <br>Robust Strategies</h1>
+                            <p data-animation="fadeInLeft" data-delay=".6s">Aasrem dfgum dolor sivst amet, consectetur adipisicing elitvde, sed dvo eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad micnim veniam, quis nostrud exercita.</p>
+                            <!-- Hero Btn -->
+                            <a href="#" class="hero-btn" data-animation="fadeInLeft" data-delay=".9s">
+                                View project
+                                <!-- Arrow SVG icon -->
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <path d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068
                                          c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557
                                          l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104
-                                         c0.006-0.006,0.011-0.013,0.018-0.019C513.968,262.339,513.943,249.635,506.134,241.843z"/> </svg>
-                             </a>
-                          </div>
+                                         c0.006-0.006,0.011-0.013,0.018-0.019C513.968,262.339,513.943,249.635,506.134,241.843z" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -155,9 +80,9 @@
                         </div>
                     </div>
                     <div class="col-xl-7 col-lg-5 col-md-4">
-                       <div class="wantToWork-btn f-right">
+                        <div class="wantToWork-btn f-right">
                             <a href="#" class="btn btn-ans">view more</a>
-                       </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -213,7 +138,7 @@
                 <span>All of our Skills In The Fild</span>
                 <h3>Differentiate Yourself And <br>Attractive Attention</h3>
                 <p>Tempor incididunt ut labore et cvhjfhore magna aliqua. Ut<br> enim ad minim veniam, quis.</p>
-                 <!-- skill Start -->
+                <!-- skill Start -->
                 <div class="skill-ara">
                     <div class="skill">
                         <div class="single-skill">
@@ -221,7 +146,7 @@
                                 <p>User Interface</p><span>75%</span>
                             </div>
                             <div class="progress">
-                                <div class="progress-bar wow slideInLeft" data-wow-duration="1s" data-wow-delay=".5s" aria-valuenow="25" role="progressbar" style="width: 75%"  aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar wow slideInLeft" data-wow-duration="1s" data-wow-delay=".5s" aria-valuenow="25" role="progressbar" style="width: 75%" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                         <div class="single-skill">
@@ -286,7 +211,7 @@
                         <div class="row no-gutters">
                             <div class="col-lg-5 col-md-6 col-sm-6">
                                 <div class="portfolio-wrapper">
-                                    <div class="portfolio-thumb small-img"  style="background-image: url(assets/img/gallery/project_list2.png);">
+                                    <div class="portfolio-thumb small-img" style="background-image: url(assets/img/gallery/project_list2.png);">
                                     </div>
                                     <!-- Popup img Link -->
                                     <div class="portfolio-content">
@@ -333,12 +258,12 @@
         <!-- Testimonial Start -->
         <div class="testimonial-area testimonial-padding">
             <div class="container ">
-               <div class="row d-flex justify-content-center">
+                <div class="row d-flex justify-content-center">
                     <div class="col-xl-11 col-lg-11 col-md-9">
                         <div class="h1-testimonial-active">
                             <!-- Single Testimonial -->
                             <div class="single-testimonial text-center">
-                                 <!-- Testimonial Content -->
+                                <!-- Testimonial Content -->
                                 <div class="testimonial-caption ">
                                     <div class="testimonial-top-cap">
                                         <img src="assets/img/icon/testimonial.png" alt="">
@@ -349,16 +274,16 @@
                                         <div class="founder-img">
                                             <img src="assets/img/testmonial/Homepage_testi.png" alt="">
                                         </div>
-                                       <div class="founder-text">
+                                        <div class="founder-text">
                                             <span>Oliva jems</span>
                                             <p>UIX designer</p>
-                                       </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <!-- Single Testimonial -->
                             <div class="single-testimonial text-center">
-                                 <!-- Testimonial Content -->
+                                <!-- Testimonial Content -->
                                 <div class="testimonial-caption ">
                                     <div class="testimonial-top-cap">
                                         <img src="assets/img/icon/testimonial.png" alt="">
@@ -369,16 +294,16 @@
                                         <div class="founder-img">
                                             <img src="assets/img/testmonial/Homepage_testi.png" alt="">
                                         </div>
-                                       <div class="founder-text">
+                                        <div class="founder-text">
                                             <span>Oliva jems</span>
                                             <p>UIX designer</p>
-                                       </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-               </div>
+                </div>
             </div>
         </div>
         <!-- Testimonial End -->
@@ -394,8 +319,8 @@
                         <ul>
                             <li>
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="30px">
-                                <path fill-rule="evenodd"  fill="rgb(4, 219, 236)" d="M15.000,0.000 C23.284,0.000 30.000,6.716 30.000,15.000 C30.000,23.284 23.284,30.000 15.000,30.000 C6.716,30.000 -0.000,23.284 -0.000,15.000 C-0.000,6.716 6.716,0.000 15.000,0.000 Z"/>
-                                <text kerning="auto" font-family="themify" fill="rgb(255, 255, 255)" font-size="14px" x="9px" y="22.0320000000002px">&#58956;</text>
+                                    <path fill-rule="evenodd" fill="rgb(4, 219, 236)" d="M15.000,0.000 C23.284,0.000 30.000,6.716 30.000,15.000 C30.000,23.284 23.284,30.000 15.000,30.000 C6.716,30.000 -0.000,23.284 -0.000,15.000 C-0.000,6.716 6.716,0.000 15.000,0.000 Z" />
+                                    <text kerning="auto" font-family="themify" fill="rgb(255, 255, 255)" font-size="14px" x="9px" y="22.0320000000002px">&#58956;</text>
                                 </svg>
                             </li>
                             <li>
@@ -405,8 +330,8 @@
                         <ul>
                             <li>
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="30px">
-                                <path fill-rule="evenodd"  fill="rgb(4, 219, 236)" d="M15.000,0.000 C23.284,0.000 30.000,6.716 30.000,15.000 C30.000,23.284 23.284,30.000 15.000,30.000 C6.716,30.000 -0.000,23.284 -0.000,15.000 C-0.000,6.716 6.716,0.000 15.000,0.000 Z"/>
-                                <text kerning="auto" font-family="themify" fill="rgb(255, 255, 255)" font-size="14px" x="9px" y="22.0320000000002px">&#58956;</text>
+                                    <path fill-rule="evenodd" fill="rgb(4, 219, 236)" d="M15.000,0.000 C23.284,0.000 30.000,6.716 30.000,15.000 C30.000,23.284 23.284,30.000 15.000,30.000 C6.716,30.000 -0.000,23.284 -0.000,15.000 C-0.000,6.716 6.716,0.000 15.000,0.000 Z" />
+                                    <text kerning="auto" font-family="themify" fill="rgb(255, 255, 255)" font-size="14px" x="9px" y="22.0320000000002px">&#58956;</text>
                                 </svg>
                             </li>
                             <li>
@@ -416,12 +341,12 @@
                         <ul>
                             <li>
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="30px">
-                                <path fill-rule="evenodd"  fill="rgb(4, 219, 236)" d="M15.000,0.000 C23.284,0.000 30.000,6.716 30.000,15.000 C30.000,23.284 23.284,30.000 15.000,30.000 C6.716,30.000 -0.000,23.284 -0.000,15.000 C-0.000,6.716 6.716,0.000 15.000,0.000 Z"/>
-                                <text kerning="auto" font-family="themify" fill="rgb(255, 255, 255)" font-size="14px" x="9px" y="22.0320000000002px">&#58956;</text>
+                                    <path fill-rule="evenodd" fill="rgb(4, 219, 236)" d="M15.000,0.000 C23.284,0.000 30.000,6.716 30.000,15.000 C30.000,23.284 23.284,30.000 15.000,30.000 C6.716,30.000 -0.000,23.284 -0.000,15.000 C-0.000,6.716 6.716,0.000 15.000,0.000 Z" />
+                                    <text kerning="auto" font-family="themify" fill="rgb(255, 255, 255)" font-size="14px" x="9px" y="22.0320000000002px">&#58956;</text>
                                 </svg>
                             </li>
                             <li>
-                                <p>Direct Mail Advertising How I Made 47 325 In 30 Days  By Mailing 2 200 Letters</p>
+                                <p>Direct Mail Advertising How I Made 47 325 In 30 Days By Mailing 2 200 Letters</p>
                             </li>
                         </ul>
                     </div>
@@ -442,9 +367,9 @@
                         </div>
                     </div>
                     <div class="col-xl-7 col-lg-5 col-md-4">
-                       <div class="wantToWork-btn f-right">
+                        <div class="wantToWork-btn f-right">
                             <a href="#" class="btn btn-ans">view more</a>
-                       </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -486,7 +411,7 @@
                             </div>
                         </div>
                     </div>
-            </div>
+                </div>
             </div>
         </div>
         <!-- David Droga End -->
@@ -512,7 +437,7 @@
         <!-- Footer Start-->
         <div class="footer-area">
             <div class="container">
-               <div class="footer-top footer-padding">
+                <div class="footer-top footer-padding">
                     <div class="row justify-content-between">
                         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
                             <div class="single-footer-caption mb-50">
@@ -571,60 +496,65 @@
                             </div>
                         </div>
                     </div>
-               </div>
+                </div>
                 <div class="footer-bottom">
                     <div class="row">
                         <div class="col-xl-12 ">
                             <div class="footer-copy-right">
-                                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                                <p>
+                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                    Copyright &copy;<script>
+                                        document.write(new Date().getFullYear());
+                                    </script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                </p>
                             </div>
                         </div>
                     </div>
-               </div>
+                </div>
             </div>
         </div>
         <!-- Footer End-->
     </footer>
     <!-- Scroll Up -->
-    <div id="back-top" >
+    <div id="back-top">
         <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
     </div>
 
 
     <!-- JS here -->
-		<!-- All JS Custom Plugins Link Here here -->
-        <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
-		<!-- Jquery, Popper, Bootstrap -->
-		<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
-        <script src="./assets/js/popper.min.js"></script>
-        <script src="./assets/js/bootstrap.min.js"></script>
-	    <!-- Jquery Mobile Menu -->
-        <script src="./assets/js/jquery.slicknav.min.js"></script>
+    <!-- All JS Custom Plugins Link Here here -->
+    <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="./assets/js/jquery.slicknav.min.js"></script>
 
-		<!-- Jquery Slick , Owl-Carousel Plugins -->
-        <script src="./assets/js/owl.carousel.min.js"></script>
-        <script src="./assets/js/slick.min.js"></script>
-		<!-- One Page, Animated-HeadLin -->
-        <script src="./assets/js/wow.min.js"></script>
-		<script src="./assets/js/animated.headline.js"></script>
-        <script src="./assets/js/jquery.magnific-popup.js"></script>
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/animated.headline.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.js"></script>
 
-		<!-- Nice-select, sticky -->
-        <script src="./assets/js/jquery.nice-select.min.js"></script>
-		<script src="./assets/js/jquery.sticky.js"></script>
-        
-        <!-- contact js -->
-        <script src="./assets/js/contact.js"></script>
-        <script src="./assets/js/jquery.form.js"></script>
-        <script src="./assets/js/jquery.validate.min.js"></script>
-        <script src="./assets/js/mail-script.js"></script>
-        <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
-        
-		<!-- Jquery Plugins, main Jquery -->	
-        <script src="./assets/js/plugins.js"></script>
-        <script src="./assets/js/main.js"></script>
-        
-    </body>
+    <!-- Nice-select, sticky -->
+    <script src="./assets/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/js/jquery.sticky.js"></script>
+
+    <!-- contact js -->
+    <script src="./assets/js/contact.js"></script>
+    <script src="./assets/js/jquery.form.js"></script>
+    <script src="./assets/js/jquery.validate.min.js"></script>
+    <script src="./assets/js/mail-script.js"></script>
+    <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
 </html>
