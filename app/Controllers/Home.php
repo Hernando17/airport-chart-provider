@@ -12,4 +12,8 @@ class Home extends BaseController
 	{
 		return view('chart');
 	}
+	public function login()
+	{
+		return view('login');
+	}
 }
