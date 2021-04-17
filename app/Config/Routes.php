@@ -36,6 +36,7 @@ $routes->get('/login', 'Home::login');
 $routes->get('/chart', 'Home::chart');
 
 $routes->get('/dashboard', 'Home::dashboard');
+$routes->get('/dashboard/pengguna', 'Home::pengguna');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

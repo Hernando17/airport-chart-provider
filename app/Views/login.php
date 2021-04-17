@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Mazer Admin Dashboard</title>
+    <title>Login - Pilot Gaming Indo</title>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/vendors/bootstrap-icons/bootstrap-icons.css">
@@ -46,8 +46,8 @@
                         <button class="btn btn-primary btn-block btn-lg shadow-lg mt-5">Masuk</button>
                     </form>
                     <div class="text-center mt-5 text-lg fs-4">
-                        <p class="text-gray-600">Belum memiliki akun? <a href="auth-register.html" class="font-bold"> Daftar</a>.</p>
-                        <p><a class="font-bold" href="auth-forgot-password.html">Lupa Kata Sandi</a>.</p>
+                        <p class="text-gray-600">Belum memiliki akun? <a href="auth-register.html" class="font-bold"> Daftar</a></p>
+                        <p><a class="font-bold" href="auth-forgot-password.html">Lupa Kata Sandi</a></p>
                     </div>
                 </div>
             </div>
