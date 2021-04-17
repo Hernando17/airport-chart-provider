@@ -20,4 +20,8 @@ class Home extends BaseController
 	{
 		return view('dashboard/index');
 	}
+	public function pengguna()
+	{
+		return view('dashboard/pengguna');
+	}
 }

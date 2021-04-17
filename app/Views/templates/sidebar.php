@@ -21,14 +21,10 @@
                     </a>
                 </li>
 
-
-
-
-
                 <li class="sidebar-title">Basis Data</li>
 
                 <li class="sidebar-item  ">
-                    <a href="form-layout.html" class='sidebar-link'>
+                    <a href="dashboard/pengguna" class='sidebar-link'>
                         <i class="bi bi-file-earmark-medical-fill"></i>
                         <span>Data Pengguna</span>
                     </a>
