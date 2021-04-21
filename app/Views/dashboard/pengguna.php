@@ -1,1016 +1,259 @@
 <?= $this->extend('templates/templates'); ?>
 <?= $this->section('content'); ?>
 
-<div id="main">
-    <header class="mb-3">
-        <a href="#" class="burger-btn d-block d-xl-none">
-            <i class="bi bi-justify fs-3"></i>
-        </a>
-    </header>
-
-    <div class="page-heading">
-        <div class="page-title">
+<div class="page-content">
+    <section class="row">
+        <div class="col-12 col-lg-9">
             <div class="row">
-                <div class="col-12 col-md-6 order-md-1 order-last">
-                    <h3>Table</h3>
-                    <p class="text-subtitle text-muted">For user to check they list</p>
+                <div class="col-6 col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body px-3 py-4-5">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="stats-icon purple">
+                                        <i class="iconly-boldShow"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h6 class="text-muted font-semibold">Profile Views</h6>
+                                    <h6 class="font-extrabold mb-0">112.000</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12 col-md-6 order-md-2 order-first">
-                    <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Table</li>
-                        </ol>
-                    </nav>
+                <div class="col-6 col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body px-3 py-4-5">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="stats-icon blue">
+                                        <i class="iconly-boldProfile"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h6 class="text-muted font-semibold">Followers</h6>
+                                    <h6 class="font-extrabold mb-0">183.000</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body px-3 py-4-5">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="stats-icon green">
+                                        <i class="iconly-boldAdd-User"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h6 class="text-muted font-semibold">Following</h6>
+                                    <h6 class="font-extrabold mb-0">80.000</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body px-3 py-4-5">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="stats-icon red">
+                                        <i class="iconly-boldBookmark"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h6 class="text-muted font-semibold">Saved Post</h6>
+                                    <h6 class="font-extrabold mb-0">112</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Profile Visit</h4>
+                        </div>
+                        <div class="card-body">
+                            <div id="chart-profile-visit"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-xl-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Profile Visit</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="d-flex align-items-center">
+                                        <svg class="bi text-primary" width="32" height="32" fill="blue" style="width:10px">
+                                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#circle-fill" />
+                                        </svg>
+                                        <h5 class="mb-0 ms-3">Europe</h5>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <h5 class="mb-0">862</h5>
+                                </div>
+                                <div class="col-12">
+                                    <div id="chart-europe"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="d-flex align-items-center">
+                                        <svg class="bi text-success" width="32" height="32" fill="blue" style="width:10px">
+                                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#circle-fill" />
+                                        </svg>
+                                        <h5 class="mb-0 ms-3">America</h5>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <h5 class="mb-0">375</h5>
+                                </div>
+                                <div class="col-12">
+                                    <div id="chart-america"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="d-flex align-items-center">
+                                        <svg class="bi text-danger" width="32" height="32" fill="blue" style="width:10px">
+                                            <use xlink:href="assets/vendors/bootstrap-icons/bootstrap-icons.svg#circle-fill" />
+                                        </svg>
+                                        <h5 class="mb-0 ms-3">Indonesia</h5>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <h5 class="mb-0">1025</h5>
+                                </div>
+                                <div class="col-12">
+                                    <div id="chart-indonesia"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-8">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Latest Comments</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-hover table-lg">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Comment</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-3">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="avatar avatar-md">
+                                                        <img src="assets/images/faces/5.jpg">
+                                                    </div>
+                                                    <p class="font-bold ms-3 mb-0">Si Cantik</p>
+                                                </div>
+                                            </td>
+                                            <td class="col-auto">
+                                                <p class=" mb-0">Congratulations on your graduation!</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-3">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="avatar avatar-md">
+                                                        <img src="assets/images/faces/2.jpg">
+                                                    </div>
+                                                    <p class="font-bold ms-3 mb-0">Si Ganteng</p>
+                                                </div>
+                                            </td>
+                                            <td class="col-auto">
+                                                <p class=" mb-0">Wow amazing design! Can you make another
+                                                    tutorial for
+                                                    this design?</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!-- Basic Tables start -->
-        <section class="section">
-            <div class="row" id="basic-table">
-                <div class="col-12 col-md-6">
-                    <div class="card">
-                        <div class="card-header">
-                            <h4 class="card-title">Table with outer spacing</h4>
+        <div class="col-12 col-lg-3">
+            <div class="card">
+                <div class="card-body py-4 px-5">
+                    <div class="d-flex align-items-center">
+                        <div class="avatar avatar-xl">
+                            <img src="assets/images/faces/1.jpg" alt="Face 1">
                         </div>
-                        <div class="card-content">
-                            <div class="card-body">
-                                <p class="card-text">Using the most basic table up, here’s how
-                                    <code>.table</code>-based tables look in Bootstrap. You can use any example
-                                    of below table for your table and it can be use with any type of bootstrap
-                                    tables.
-                                </p>
-                                <!-- Table with outer spacing -->
-                                <div class="table-responsive">
-                                    <table class="table table-lg">
-                                        <thead>
-                                            <tr>
-                                                <th>NAME</th>
-                                                <th>RATE</th>
-                                                <th>SKILL</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="text-bold-500">Michael Right</td>
-                                                <td>$15/hr</td>
-                                                <td class="text-bold-500">UI/UX</td>
-
-                                            </tr>
-                                            <tr>
-                                                <td class="text-bold-500">Morgan Vanblum</td>
-                                                <td>$13/hr</td>
-                                                <td class="text-bold-500">Graphic concepts</td>
-
-                                            </tr>
-                                            <tr>
-                                                <td class="text-bold-500">Tiffani Blogz</td>
-                                                <td>$15/hr</td>
-                                                <td class="text-bold-500">Animation</td>
-
-                                            </tr>
-                                            <tr>
-                                                <td class="text-bold-500">Ashley Boul</td>
-                                                <td>$15/hr</td>
-                                                <td class="text-bold-500">Animation</td>
-
-                                            </tr>
-                                            <tr>
-                                                <td class="text-bold-500">Mikkey Mice</td>
-                                                <td>$15/hr</td>
-                                                <td class="text-bold-500">Animation</td>
-
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div class="card">
-                        <div class="card-header">
-                            <h4 class="card-title">Table without outer spacing</h4>
-                        </div>
-                        <div class="card-content">
-                            <div class="card-body">
-                                <p class="card-text">Using the most basic table up, here’s how
-                                    <code>.table</code>-based tables look in Bootstrap. You can use any example
-                                    of below table for your table and it can be use with any type of bootstrap
-                                    tables.
-                                </p>
-                            </div>
-
-                            <!-- Table with no outer spacing -->
-                            <div class="table-responsive">
-                                <table class="table mb-0 table-lg">
-                                    <thead>
-                                        <tr>
-                                            <th>NAME</th>
-                                            <th>RATE</th>
-                                            <th>SKILL</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="text-bold-500">Michael Right</td>
-                                            <td>$15/hr</td>
-                                            <td class="text-bold-500">UI/UX</td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="text-bold-500">Morgan Vanblum</td>
-                                            <td>$13/hr</td>
-                                            <td class="text-bold-500">Graphic concepts</td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="text-bold-500">Tiffani Blogz</td>
-                                            <td>$15/hr</td>
-                                            <td class="text-bold-500">Animation</td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="text-bold-500">Ashley Boul</td>
-                                            <td>$15/hr</td>
-                                            <td class="text-bold-500">Animation</td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="text-bold-500">Mikkey Mice</td>
-                                            <td>$15/hr</td>
-                                            <td class="text-bold-500">Animation</td>
-
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                        <div class="ms-3 name">
+                            <h5 class="font-bold">John Duck</h5>
+                            <h6 class="text-muted mb-0">@johnducky</h6>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Basic Tables end -->
-
-        <!--  Inverse table start -->
-        <section class="section">
-            <div class="row" id="table-inverse">
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <h4 class="card-title">Inverse table</h4>
+            <div class="card">
+                <div class="card-header">
+                    <h4>Recent Messages</h4>
+                </div>
+                <div class="card-content pb-4">
+                    <div class="recent-message d-flex px-4 py-3">
+                        <div class="avatar avatar-lg">
+                            <img src="assets/images/faces/4.jpg">
                         </div>
-                        <div class="card-content">
-                            <div class="card-body">
-                                <p>You can also invert the colors—with light text on dark backgrounds—with <code class="highlighter-rouge">.table-dark</code>.</p>
-                            </div>
-                            <!-- table with dark -->
-                            <div class="table-responsive">
-                                <table class="table table-dark mb-0">
-                                    <thead>
-                                        <tr>
-                                            <th>NAME</th>
-                                            <th>RATE</th>
-                                            <th>SKILL</th>
-                                            <th>TYPE</th>
-                                            <th>LOCATION</th>
-                                            <th>ACTION</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="text-bold-500">Michael Right</td>
-                                            <td>$15/hr</td>
-                                            <td class="text-bold-500">UI/UX</td>
-                                            <td>Remote</td>
-                                            <td>Austin,Taxes</td>
-                                            <td><a href="#"><i class="badge-circle font-medium-1" data-feather="mail"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-bold-500">Morgan Vanblum</td>
-                                            <td>$13/hr</td>
-                                            <td class="text-bold-500">Graphic concepts</td>
-                                            <td>Remote</td>
-                                            <td>Shangai,China</td>
-                                            <td><a href="#"><i class="badge-circle font-medium-1" data-feather="mail"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-bold-500">Tiffani Blogz</td>
-                                            <td>$15/hr</td>
-                                            <td class="text-bold-500">Animation</td>
-                                            <td>Remote</td>
-                                            <td>Austin,Texas</td>
-                                            <td><a href="#"><i class="badge-circle font-medium-1" data-feather="mail"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-bold-500">Ashley Boul</td>
-                                            <td>$15/hr</td>
-                                            <td class="text-bold-500">Animation</td>
-                                            <td>Remote</td>
-                                            <td>Austin,Texas</td>
-                                            <td><a href="#"><i class="badge-circle font-medium-1" data-feather="mail"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-bold-500">Mikkey Mice</td>
-                                            <td>$15/hr</td>
-                                            <td class="text-bold-500">Animation</td>
-                                            <td>Remote</td>
-                                            <td>Austin,Texas</td>
-                                            <td><a href="#"><i class="badge-circle font-medium-1" data-feather="mail"></i></a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="card-body">
-                                <p>You can also invert the colors—with dark text on light backgrounds—with <code class="highlighter-rouge">.table-light</code>.</p>
-                            </div>
-                            <!-- table with light -->
-                            <div class="table-responsive">
-                                <table class="table table-light mb-0">
-                                    <thead>
-                                        <tr>
-                                            <th>NAME</th>
-                                            <th>RATE</th>
-                                            <th>SKILL</th>
-                                            <th>TYPE</th>
-                                            <th>LOCATION</th>
-                                            <th>ACTION</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="text-bold-500">Michael Right</td>
-                                            <td>$15/hr</td>
-                                            <td class="text-bold-500">UI/UX</td>
-                                            <td>Remote</td>
-                                            <td>Austin,Taxes</td>
-                                            <td><a href="#"><i class="badge-circle badge-circle-white text-secondary font-medium-1" data-feather="mail"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-bold-500">Morgan Vanblum</td>
-                                            <td>$13/hr</td>
-                                            <td class="text-bold-500">Graphic concepts</td>
-                                            <td>Remote</td>
-                                            <td>Shangai,China</td>
-                                            <td><a href="#"><i class="badge-circle badge-circle-white text-secondary font-medium-1" data-feather="mail"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-bold-500">Tiffani Blogz</td>
-                                            <td>$15/hr</td>
-                                            <td class="text-bold-500">Animation</td>
-                                            <td>Remote</td>
-                                            <td>Austin,Texas</td>
-                                            <td><a href="#"><i class="badge-circle badge-circle-white text-secondary font-medium-1" data-feather="mail"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-bold-500">Ashley Boul</td>
-                                            <td>$15/hr</td>
-                                            <td class="text-bold-500">Animation</td>
-                                            <td>Remote</td>
-                                            <td>Austin,Texas</td>
-                                            <td><a href="#"><i class="badge-circle badge-circle-white text-secondary font-medium-1" data-feather="mail"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-bold-500">Mikkey Mice</td>
-                                            <td>$15/hr</td>
-                                            <td class="text-bold-500">Animation</td>
-                                            <td>Remote</td>
-                                            <td>Austin,Texas</td>
-                                            <td><a href="#"><i class="badge-circle badge-circle-white text-secondary font-medium-1" data-feather="mail"></i></a></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                        <div class="name ms-4">
+                            <h5 class="mb-1">Hank Schrader</h5>
+                            <h6 class="text-muted mb-0">@johnducky</h6>
                         </div>
+                    </div>
+                    <div class="recent-message d-flex px-4 py-3">
+                        <div class="avatar avatar-lg">
+                            <img src="assets/images/faces/5.jpg">
+                        </div>
+                        <div class="name ms-4">
+                            <h5 class="mb-1">Dean Winchester</h5>
+                            <h6 class="text-muted mb-0">@imdean</h6>
+                        </div>
+                    </div>
+                    <div class="recent-message d-flex px-4 py-3">
+                        <div class="avatar avatar-lg">
+                            <img src="assets/images/faces/1.jpg">
+                        </div>
+                        <div class="name ms-4">
+                            <h5 class="mb-1">John Dodol</h5>
+                            <h6 class="text-muted mb-0">@dodoljohn</h6>
+                        </div>
+                    </div>
+                    <div class="px-4">
+                        <button class='btn btn-block btn-xl btn-light-primary font-bold mt-3'>Start
+                            Conversation</button>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Inverse table end -->
-        <!-- Table head options start -->
-        <section class="section">
-            <div class="row" id="table-head">
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <h4 class="card-title">Table head options</h4>
-                        </div>
-                        <div class="card-content">
-                            <div class="card-body">
-                                <p>Similar to tables and dark tables, use the modifier classes <code class="highlighter-rouge">.thead-light</code> or <code class="highlighter-rouge">.thead-dark</code> to
-                                    make <code class="highlighter-rouge">&lt;thead&gt;</code>s appear light or
-                                    dark gray.
-                                </p>
-                            </div>
-                            <!-- table head dark -->
-                            <div class="table-responsive">
-                                <table class="table mb-0">
-                                    <thead class="thead-dark">
-                                        <tr>
-                                            <th>NAME</th>
-                                            <th>RATE</th>
-                                            <th>SKILL</th>
-                                            <th>TYPE</th>
-                                            <th>LOCATION</th>
-                                            <th>ACTION</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="text-bold-500">Michael Right</td>
-                                            <td>$15/hr</td>
-                                            <td class="text-bold-500">UI/UX</td>
-                                            <td>Remote</td>
-                                            <td>Austin,Taxes</td>
-                                            <td><a href="#"><i class="badge-circle badge-circle-light-secondary font-medium-1" data-feather="mail"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-bold-500">Morgan Vanblum</td>
-                                            <td>$13/hr</td>
-                                            <td class="text-bold-500">Graphic concepts</td>
-                                            <td>Remote</td>
-                                            <td>Shangai,China</td>
-                                            <td><a href="#"><i class="badge-circle badge-circle-light-secondary font-medium-1" data-feather="mail"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-bold-500">Tiffani Blogz</td>
-                                            <td>$15/hr</td>
-                                            <td class="text-bold-500">Animation</td>
-                                            <td>Remote</td>
-                                            <td>Austin,Texas</td>
-                                            <td><a href="#"><i class="badge-circle badge-circle-light-secondary font-medium-1" data-feather="mail"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-bold-500">Ashley Boul</td>
-                                            <td>$15/hr</td>
-                                            <td class="text-bold-500">Animation</td>
-                                            <td>Remote</td>
-                                            <td>Austin,Texas</td>
-                                            <td><a href="#"><i class="badge-circle badge-circle-light-secondary font-medium-1" data-feather="mail"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-bold-500">Mikkey Mice</td>
-                                            <td>$15/hr</td>
-                                            <td class="text-bold-500">Animation</td>
-                                            <td>Remote</td>
-                                            <td>Austin,Texas</td>
-                                            <td><a href="#"><i class="badge-circle badge-circle-light-secondary font-medium-1" data-feather="mail"></i></a></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
+            <div class="card">
+                <div class="card-header">
+                    <h4>Visitors Profile</h4>
+                </div>
+                <div class="card-body">
+                    <div id="chart-visitors-profile"></div>
                 </div>
             </div>
-        </section>
-        <!-- Table head options end -->
-
-        <!-- Striped rows start -->
-        <section class="section">
-            <div class="row" id="table-striped">
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <h4 class="card-title">Striped rows</h4>
-                        </div>
-                        <div class="card-content">
-                            <div class="card-body">
-                                <p class="card-text">Use <code class="highlighter-rouge">.table-striped</code>
-                                    to add
-                                    zebra-striping to any
-                                    table row within the <code class="highlighter-rouge">&lt;tbody&gt;</code>.
-                                    This styling
-                                    doesn't work in IE8
-                                    and below as <code>:nth-child</code> CSS selector isn't supported.</p>
-                            </div>
-                            <!-- table striped -->
-                            <div class="table-responsive">
-                                <table class="table table-striped mb-0">
-                                    <thead>
-                                        <tr>
-                                            <th>NAME</th>
-                                            <th>RATE</th>
-                                            <th>SKILL</th>
-                                            <th>TYPE</th>
-                                            <th>LOCATION</th>
-                                            <th>ACTION</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="text-bold-500">Michael Right</td>
-                                            <td>$15/hr</td>
-                                            <td class="text-bold-500">UI/UX</td>
-                                            <td>Remote</td>
-                                            <td>Austin,Taxes</td>
-                                            <td><a href="#"><i class="badge-circle badge-circle-light-secondary font-medium-1" data-feather="mail"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-bold-500">Morgan Vanblum</td>
-                                            <td>$13/hr</td>
-                                            <td class="text-bold-500">Graphic concepts</td>
-                                            <td>Remote</td>
-                                            <td>Shangai,China</td>
-                                            <td><a href="#"><i class="badge-circle badge-circle-light-secondary font-medium-1" data-feather="mail"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-bold-500">Tiffani Blogz</td>
-                                            <td>$15/hr</td>
-                                            <td class="text-bold-500">Animation</td>
-                                            <td>Remote</td>
-                                            <td>Austin,Texas</td>
-                                            <td><a href="#"><i class="badge-circle badge-circle-light-secondary font-medium-1" data-feather="mail"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-bold-500">Ashley Boul</td>
-                                            <td>$15/hr</td>
-                                            <td class="text-bold-500">Animation</td>
-                                            <td>Remote</td>
-                                            <td>Austin,Texas</td>
-                                            <td><a href="#"><i class="badge-circle badge-circle-light-secondary font-medium-1" data-feather="mail"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-bold-500">Mikkey Mice</td>
-                                            <td>$15/hr</td>
-                                            <td class="text-bold-500">Animation</td>
-                                            <td>Remote</td>
-                                            <td>Austin,Texas</td>
-                                            <td><a href="#"><i class="badge-circle badge-circle-light-secondary font-medium-1" data-feather="mail"></i></a></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Striped rows end -->
-
-        <!-- Striped rows with inverse dark table start -->
-        <section class="section">
-            <div class="row" id="table-striped-dark">
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <h4 class="card-title">Striped inverse dark</h4>
-                        </div>
-                        <div class="card-content">
-                            <div class="card-body">
-                                <p class="card-text">Use <code>.table-dark</code> with
-                                    <code>.table-striped</code> to add
-                                    zebra-striping to
-                                    any inverse table row within the <code>&lt;tbody&gt;</code>. This styling
-                                    doesn't work
-                                    in
-                                    IE8 and below as
-                                    <code>:nth-child</code> CSS selector isn't supported.
-                                </p>
-                            </div>
-                            <!-- table strip dark -->
-                            <div class="table-responsive">
-                                <table class="table table-striped table-dark mb-0">
-                                    <thead>
-                                        <tr>
-                                            <th>NAME</th>
-                                            <th>RATE</th>
-                                            <th>SKILL</th>
-                                            <th>TYPE</th>
-                                            <th>LOCATION</th>
-                                            <th>ACTION</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="text-bold-500">Michael Right</td>
-                                            <td>$15/hr</td>
-                                            <td class="text-bold-500">UI/UX</td>
-                                            <td>Remote</td>
-                                            <td>Austin,Taxes</td>
-                                            <td><a href="#"><i class="badge-circle font-medium-1" data-feather="mail"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-bold-500">Morgan Vanblum</td>
-                                            <td>$13/hr</td>
-                                            <td class="text-bold-500">Graphic concepts</td>
-                                            <td>Remote</td>
-                                            <td>Shangai,China</td>
-                                            <td><a href="#"><i class="badge-circle font-medium-1" data-feather="mail"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-bold-500">Tiffani Blogz</td>
-                                            <td>$15/hr</td>
-                                            <td class="text-bold-500">Animation</td>
-                                            <td>Remote</td>
-                                            <td>Austin,Texas</td>
-                                            <td><a href="#"><i class="badge-circle font-medium-1" data-feather="mail"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-bold-500">Ashley Boul</td>
-                                            <td>$15/hr</td>
-                                            <td class="text-bold-500">Animation</td>
-                                            <td>Remote</td>
-                                            <td>Austin,Texas</td>
-                                            <td><a href="#"><i class="badge-circle font-medium-1" data-feather="mail"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-bold-500">Mikkey Mice</td>
-                                            <td>$15/hr</td>
-                                            <td class="text-bold-500">Animation</td>
-                                            <td>Remote</td>
-                                            <td>Austin,Texas</td>
-                                            <td><a href="#"><i class="badge-circle font-medium-1" data-feather="mail"></i></a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Striped rows with inverse dark table end -->
-
-        <!-- Bordered table start -->
-        <section class="section">
-            <div class="row" id="table-bordered">
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <h4 class="card-title">Bordered table</h4>
-                        </div>
-                        <div class="card-content">
-                            <div class="card-body">
-                                <p class="card-text">Add <code>.table-bordered</code> for borders on all sides
-                                    of the table
-                                    and
-                                    cells. For
-                                    Inverse Dark Table, add <code>.table-dark</code> along with
-                                    <code>.table-bordered</code>.
-                                </p>
-                            </div>
-                            <!-- table bordered -->
-                            <div class="table-responsive">
-                                <table class="table table-bordered mb-0">
-                                    <thead>
-                                        <tr>
-                                            <th>NAME</th>
-                                            <th>RATE</th>
-                                            <th>SKILL</th>
-                                            <th>TYPE</th>
-                                            <th>LOCATION</th>
-                                            <th>ACTION</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="text-bold-500">Michael Right</td>
-                                            <td>$15/hr</td>
-                                            <td class="text-bold-500">UI/UX</td>
-                                            <td>Remote</td>
-                                            <td>Austin,Taxes</td>
-                                            <td><a href="#"><i class="badge-circle badge-circle-light-secondary font-medium-1" data-feather="mail"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-bold-500">Morgan Vanblum</td>
-                                            <td>$13/hr</td>
-                                            <td class="text-bold-500">Graphic concepts</td>
-                                            <td>Remote</td>
-                                            <td>Shangai,China</td>
-                                            <td><a href="#"><i class="badge-circle badge-circle-light-secondary font-medium-1" data-feather="mail"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-bold-500">Tiffani Blogz</td>
-                                            <td>$15/hr</td>
-                                            <td class="text-bold-500">Animation</td>
-                                            <td>Remote</td>
-                                            <td>Austin,Texas</td>
-                                            <td><a href="#"><i class="badge-circle badge-circle-light-secondary font-medium-1" data-feather="mail"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-bold-500">Ashley Boul</td>
-                                            <td>$15/hr</td>
-                                            <td class="text-bold-500">Animation</td>
-                                            <td>Remote</td>
-                                            <td>Austin,Texas</td>
-                                            <td><a href="#"><i class="badge-circle badge-circle-light-secondary font-medium-1" data-feather="mail"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-bold-500">Mikkey Mice</td>
-                                            <td>$15/hr</td>
-                                            <td class="text-bold-500">Animation</td>
-                                            <td>Remote</td>
-                                            <td>Austin,Texas</td>
-                                            <td><a href="#"><i class="badge-circle badge-circle-light-secondary font-medium-1" data-feather="mail"></i></a></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Bordered table end -->
-
-        <!-- Borderless table start -->
-        <section class="section">
-            <div class="row" id="table-borderless">
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <h4 class="card-title">Borderless Table</h4>
-                        </div>
-                        <div class="card-content">
-                            <div class="card-body">
-                                <p class="card-text">Add <code>.table-borderless</code> for a table without
-                                    borders. It can
-                                    also
-                                    be used on
-                                    dark tables.</p>
-                            </div>
-                            <!-- table with no border -->
-                            <div class="table-responsive">
-                                <table class="table table-borderless mb-0">
-                                    <thead>
-                                        <tr>
-                                            <th>NAME</th>
-                                            <th>RATE</th>
-                                            <th>SKILL</th>
-                                            <th>TYPE</th>
-                                            <th>LOCATION</th>
-                                            <th>ACTION</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="text-bold-500">Michael Right</td>
-                                            <td>$15/hr</td>
-                                            <td class="text-bold-500">UI/UX</td>
-                                            <td>Remote</td>
-                                            <td>Austin,Taxes</td>
-                                            <td><a href="#"><i class="badge-circle badge-circle-light-secondary font-medium-1" data-feather="mail"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-bold-500">Morgan Vanblum</td>
-                                            <td>$13/hr</td>
-                                            <td class="text-bold-500">Graphic concepts</td>
-                                            <td>Remote</td>
-                                            <td>Shangai,China</td>
-                                            <td><a href="#"><i class="badge-circle badge-circle-light-secondary font-medium-1" data-feather="mail"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-bold-500">Tiffani Blogz</td>
-                                            <td>$15/hr</td>
-                                            <td class="text-bold-500">Animation</td>
-                                            <td>Remote</td>
-                                            <td>Austin,Texas</td>
-                                            <td><a href="#"><i class="badge-circle badge-circle-light-secondary font-medium-1" data-feather="mail"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-bold-500">Ashley Boul</td>
-                                            <td>$15/hr</td>
-                                            <td class="text-bold-500">Animation</td>
-                                            <td>Remote</td>
-                                            <td>Austin,Texas</td>
-                                            <td><a href="#"><i class="badge-circle badge-circle-light-secondary font-medium-1" data-feather="mail"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-bold-500">Mikkey Mice</td>
-                                            <td>$15/hr</td>
-                                            <td class="text-bold-500">Animation</td>
-                                            <td>Remote</td>
-                                            <td>Austin,Texas</td>
-                                            <td><a href="#"><i class="badge-circle badge-circle-light-secondary font-medium-1" data-feather="mail"></i></a></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Borderless table end -->
-
-        <!-- Hoverable rows start -->
-        <section class="section">
-            <div class="row" id="table-hover-row">
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <h4 class="card-title">Hoverable rows</h4>
-                        </div>
-                        <div class="card-content">
-                            <div class="card-body">
-                                <p>Add <code class="highlighter-rouge">.table-hover</code> to enable a hover
-                                    state on table
-                                    rows
-                                    within a
-                                    <code class="highlighter-rouge">&lt;tbody&gt;</code>.
-                                </p>
-                            </div>
-                            <!-- table hover -->
-                            <div class="table-responsive">
-                                <table class="table table-hover mb-0">
-                                    <thead>
-                                        <tr>
-                                            <th>NAME</th>
-                                            <th>RATE</th>
-                                            <th>SKILL</th>
-                                            <th>TYPE</th>
-                                            <th>LOCATION</th>
-                                            <th>ACTION</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="text-bold-500">Michael Right</td>
-                                            <td>$15/hr</td>
-                                            <td class="text-bold-500">UI/UX</td>
-                                            <td>Remote</td>
-                                            <td>Austin,Taxes</td>
-                                            <td><a href="#"><i class="badge-circle badge-circle-light-secondary font-medium-1" data-feather="mail"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-bold-500">Morgan Vanblum</td>
-                                            <td>$13/hr</td>
-                                            <td class="text-bold-500">Graphic concepts</td>
-                                            <td>Remote</td>
-                                            <td>Shangai,China</td>
-                                            <td><a href="#"><i class="badge-circle badge-circle-light-secondary font-medium-1" data-feather="mail"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-bold-500">Tiffani Blogz</td>
-                                            <td>$15/hr</td>
-                                            <td class="text-bold-500">Animation</td>
-                                            <td>Remote</td>
-                                            <td>Austin,Texas</td>
-                                            <td><a href="#"><i class="badge-circle badge-circle-light-secondary font-medium-1" data-feather="mail"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-bold-500">Ashley Boul</td>
-                                            <td>$15/hr</td>
-                                            <td class="text-bold-500">Animation</td>
-                                            <td>Remote</td>
-                                            <td>Austin,Texas</td>
-                                            <td><a href="#"><i class="badge-circle badge-circle-light-secondary font-medium-1" data-feather="mail"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-bold-500">Mikkey Mice</td>
-                                            <td>$15/hr</td>
-                                            <td class="text-bold-500">Animation</td>
-                                            <td>Remote</td>
-                                            <td>Austin,Texas</td>
-                                            <td><a href="#"><i class="badge-circle badge-circle-light-secondary font-medium-1" data-feather="mail"></i></a></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Hoverable rows end -->
-
-        <!-- Contextual classes start -->
-        <section class="section">
-            <div class="row" id="table-contexual">
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <h4 class="card-title">Contextual classes</h4>
-                        </div>
-                        <div class="card-content">
-                            <div class="card-body">
-                                <p>Use contextual classes to color table rows or individual cells. Read full
-                                    documnetation
-                                    <a href="https://getbootstrap.com/docs/4.3/content/tables/#contextual-classes" target="_blank">here.</a>
-                                </p>
-                            </div>
-                            <!-- table contextual / colored -->
-                            <div class="table-responsive">
-                                <table class="table mb-0">
-                                    <thead>
-                                        <tr>
-                                            <th>NAME</th>
-                                            <th>RATE</th>
-                                            <th>SKILL</th>
-                                            <th>TYPE</th>
-                                            <th>LOCATION</th>
-                                            <th>ACTION</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="table-active">
-                                            <td class="text-bold-500">Michael Right</td>
-                                            <td>$15/hr</td>
-                                            <td class="text-bold-500">UI/UX</td>
-                                            <td>Remote</td>
-                                            <td>Austin,Taxes</td>
-                                            <td><a href="#"><i class="badge-circle badge-circle-light-secondary font-medium-1" data-feather="mail"></i></a></td>
-                                        </tr>
-                                        <tr class="table-primary">
-                                            <td class="text-bold-500">Morgan Vanblum</td>
-                                            <td>$13/hr</td>
-                                            <td class="text-bold-500">Graphic concepts</td>
-                                            <td>Remote</td>
-                                            <td>Shangai,China</td>
-                                            <td><a href="#"><i class="badge-circle badge-circle-light-secondary font-medium-1" data-feather="mail"></i></a></td>
-                                        </tr>
-                                        <tr class="table-secondary">
-                                            <td class="text-bold-500">Tiffani Blogz</td>
-                                            <td>$15/hr</td>
-                                            <td class="text-bold-500">Animation</td>
-                                            <td>Remote</td>
-                                            <td>Austin,Texas</td>
-                                            <td><a href="#"><i class="badge-circle badge-circle-light-secondary font-medium-1" data-feather="mail"></i></a></td>
-                                        </tr>
-                                        <tr class="table-success">
-                                            <td class="text-bold-500">Ashley Boul</td>
-                                            <td>$15/hr</td>
-                                            <td class="text-bold-500">Animation</td>
-                                            <td>Remote</td>
-                                            <td>Austin,Texas</td>
-                                            <td><a href="#"><i class="badge-circle badge-circle-light-secondary font-medium-1" data-feather="mail"></i></a></td>
-                                        </tr>
-                                        <tr class="table-danger">
-                                            <td class="text-bold-500">Mikkey Mice</td>
-                                            <td>$15/hr</td>
-                                            <td class="text-bold-500">Animation</td>
-                                            <td>Remote</td>
-                                            <td>Austin,Texas</td>
-                                            <td><a href="#"><i class="badge-circle badge-circle-light-secondary font-medium-1" data-feather="mail"></i></a></td>
-                                        </tr>
-                                        <tr class="table-warning">
-                                            <td class="text-bold-500">Mikkey Mice</td>
-                                            <td>$15/hr</td>
-                                            <td class="text-bold-500">Animation</td>
-                                            <td>Remote</td>
-                                            <td>Austin,Texas</td>
-                                            <td><a href="#"><i class="badge-circle badge-circle-light-secondary font-medium-1" data-feather="mail"></i></a></td>
-                                        </tr>
-                                        <tr class="table-info">
-                                            <td class="text-bold-500">Mikkey Mice</td>
-                                            <td>$15/hr</td>
-                                            <td class="text-bold-500">Animation</td>
-                                            <td>Remote</td>
-                                            <td>Austin,Texas</td>
-                                            <td><a href="#"><i class="badge-circle badge-circle-light-secondary font-medium-1" data-feather="mail"></i></a></td>
-                                        </tr>
-                                        <tr class="table-light">
-                                            <td class="text-bold-500">Mikkey Mice</td>
-                                            <td>$15/hr</td>
-                                            <td class="text-bold-500">Animation</td>
-                                            <td>Remote</td>
-                                            <td>Austin,Texas</td>
-                                            <td><a href="#"><i class="badge-circle badge-circle-light-secondary font-medium-1" data-feather="mail"></i></a></td>
-                                        </tr>
-                                        <tr class="table-dark">
-                                            <td class="text-bold-500">Mikkey Mice</td>
-                                            <td>$15/hr</td>
-                                            <td class="text-bold-500">Animation</td>
-                                            <td>Remote</td>
-                                            <td>Austin,Texas</td>
-                                            <td><a href="#"><i class="badge-circle badge-circle-light-secondary font-medium-1" data-feather="mail"></i></a></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Contextual classes end -->
-
-        <!-- Responsive tables start -->
-        <section class="section">
-            <div class="row" id="table-responsive">
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <h4 class="card-title">Always responsive</h4>
-                        </div>
-                        <div class="card-content">
-                            <div class="card-body">
-                                <p>Responsive tables allow tables to be scrolled horizontally with ease. Make
-                                    any table
-                                    responsive across all
-                                    viewports by adding <code class="highlighter-rouge">.table-responsive</code>
-                                    class on
-                                    <code class="highlighter-rouge">.table</code>. Or, pick a maximum breakpoint
-                                    with which
-                                    to
-                                    have a responsive
-                                    table up to by adding <code class="highlighter-rouge"> .table-responsive{-sm|-md|-lg|-xl}</code>.
-                                    Read full
-                                    documnetation <a href="https://getbootstrap.com/docs/4.3/content/tables/#responsive-tables" target="_blank">here.</a>
-                                </p>
-
-                                <div class="alert alert-primary">
-                                    <h4 class="alert-heading">Vertical clipping/truncation</h4>
-                                    <p>Responsive tables make use of <code class="highlighter-rouge">overflow-y: hidden</code>,
-                                        which clips off
-                                        any content that goes beyond the bottom or top edges of the table. In
-                                        particular,
-                                        this
-                                        can clip off
-                                        dropdown menus and other third-party widgets.</p>
-                                </div>
-                            </div>
-                            <!-- table responsive -->
-                            <div class="table-responsive">
-                                <table class="table mb-0">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">#</th>
-                                            <th scope="col">Heading 1</th>
-                                            <th scope="col">Heading 2</th>
-                                            <th scope="col">Heading 3</th>
-                                            <th scope="col">Heading 4</th>
-                                            <th scope="col">Heading 5</th>
-                                            <th scope="col">Heading 6</th>
-                                            <th scope="col">Heading 7</th>
-                                            <th scope="col">Heading 8</th>
-                                            <th scope="col">Heading 9</th>
-                                            <th scope="col">Heading 10</th>
-                                            <th scope="col">Heading 11</th>
-                                            <th scope="col">Heading 12</th>
-                                            <th scope="col">Heading 13</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Michael Right</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Michael Right</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Michael Right</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                            <td>Table cell</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <?= $this->endSection(); ?>
+        </div>
+        <?= $this->endSection(); ?>
