@@ -3,7 +3,7 @@
         <div class="sidebar-header">
             <div class="d-flex justify-content-between">
                 <div class="logo">
-                    <a href="index.html"><img src="assets/images/logo/pilotgamingindo.jpg" alt="Logo" srcset=""></a>
+                    <a href="/dashboard/index"><img src="/assets/images/logo/pilotgamingindo.jpg" alt="Logo" srcset=""></a>
                 </div>
                 <div class="toggler">
                     <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
@@ -14,8 +14,8 @@
             <ul class="menu">
                 <li class="sidebar-title">Menu</li>
 
-                <li class="sidebar-item active ">
-                    <a href="index.html" class='sidebar-link'>
+                <li class="sidebar-item">
+                    <a href="/dashboard/index" class='sidebar-link'>
                         <i class="bi bi-grid-fill"></i>
                         <span>Beranda</span>
                     </a>
@@ -23,8 +23,8 @@
 
                 <li class="sidebar-title">Basis Data</li>
 
-                <li class="sidebar-item  ">
-                    <a href="dashboard/pengguna" class='sidebar-link'>
+                <li class="sidebar-item">
+                    <a href="/dashboard/pengguna" class='sidebar-link'>
                         <i class="bi bi-file-earmark-medical-fill"></i>
                         <span>Data Pengguna</span>
                     </a>
