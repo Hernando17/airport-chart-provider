@@ -1,6 +1,8 @@
 <?= $this->extend('templates/templates'); ?>
 <?= $this->section('content'); ?>
 
+
+
 <div class="page-content">
     <section class="row">
         <div class="col-12 col-lg-9">
@@ -256,6 +258,4 @@
                 </div>
             </div>
         </div>
-    </section>
-</div>
-<?= $this->endSection(); ?>
+        <?= $this->endSection(); ?>
