@@ -4,7 +4,7 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class dashboardModel extends Model
+class DashboardModel extends Model
 {
     protected $table      = 'user';
     protected $useTimestamps = true;
