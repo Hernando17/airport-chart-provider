@@ -9,6 +9,8 @@
                 <p class="text-subtitle text-muted">For user to check they list</p>
             </div>
 
+
+
             <div class="col-12 col-md-6 order-md-2 order-first">
                 <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
                     <ol class="breadcrumb">
@@ -31,12 +33,13 @@
                                     <?= session()->getFlashdata('pesan'); ?>
                                 </div>
                             <?php endif; ?>
-                            <a href="/Home/create" class="mb-4 btn btn-success" style="float:right; margin-right:20px;margin-top:20px;">+</a>
+                            <a href="/Home/create" class="mb-4 btn btn-success fas fa-user-plus" style="float:right; margin-right:20px;margin-top:20px;"></a>
                             <table class="table table-bordered mb-0">
                                 <thead>
                                     <tr>
                                         <th>ID</th>
                                         <th>FOTO</th>
+                                        <th>LEVEL</th>
                                         <th>NAMA</th>
                                         <th>EMAIL</th>
                                         <th>ACTION</th>
@@ -49,7 +52,10 @@
                                                 <?= $k['id']; ?>
                                             </td>
                                             <td>
-                                                <?= $k['foto']; ?>
+                                                <img class="rounded-circle" style="margin-left:10px;" src="/assets/images/pp/<?= $k['foto']; ?>" width="50px">
+                                            </td>
+                                            <td>
+                                                <?= $k['level']; ?>
                                             </td>
                                             <td>
                                                 <?= $k['username']; ?>
@@ -59,20 +65,26 @@
                                             </td>
                                             <td>
                                                 <div class="buttons">
-                                                    <a href="#" class="btn btn-success">Edit</a>
-                                                    <a href="#" class="btn btn-warning">Reset</a>
-                                                    <a href="#" class="btn btn-danger">Delete</a>
-                                                </div>
+                                                    <a href="#" class="btn btn-primary fa fa-user"></a>
+                                                    <a href="#" class="btn btn-success fa fa-edit"></a>
+                                                    <a href="#" class="btn btn-warning fas fa-key"></a>
+                                                    <form action="/Home/<?= $k['id']; ?>" method="post" class="d-inline">
+                                                        <?= csrf_field(); ?>
+                                                        <input type="hidden" name="_method" value="DELETE">
+                                                        <button type="submit" class="btn btn-danger  fas fa-trash" onclick="return confirm('Apakah anda yakin?');"></button>
+                                                    </form>
                                             </td>
-                                        </tr>
-                                    <?php endforeach; ?>
-                                </tbody>
-                            </table>
                         </div>
+                        </td>
+                        </tr>
+                    <?php endforeach; ?>
+                    </tbody>
+                    </table>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+</div>
+</section>
 
-    <?= $this->endSection(); ?>
+<?= $this->endSection(); ?>
