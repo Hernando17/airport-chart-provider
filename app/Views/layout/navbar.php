@@ -8,7 +8,7 @@
                         <!-- Logo -->
                         <div class="col-xl-2 col-lg-1 col-md-1">
                             <div class="logo">
-                                <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                                <a href="index.html"><img src="<?= base_url(); ?>/assets/img/logo/logo.png" alt=""></a>
                             </div>
                         </div>
                         <div class="col-xl-8 col-lg-8 col-md-8">
@@ -38,7 +38,7 @@
                         </div>
                         <div class="col-xl-2 col-lg-3 col-md-3">
                             <div class="header-right-btn f-right d-none d-lg-block">
-                                <a href="login" class="btn header-btn">Masuk</a>
+                                <a href="/Auth/login" class="btn header-btn">Masuk</a>
                             </div>
                         </div>
                         <!-- Mobile Menu -->

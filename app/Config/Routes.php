@@ -35,7 +35,8 @@ $routes->get('/Home/index', 'Home::index');
 $routes->get('/Home/chart', 'Home::chart');
 $routes->get('/Auth/login', 'Auth::login');
 
-$routes->get('/dashboard/index', 'Home::dashboard');
+$routes->get('/dashboard/index', 'Home::index');
+$routes->get('/dashboard/create', 'Home::create');
 $routes->get('/dashboard/pengguna', 'Home::pengguna');
 /*
  * --------------------------------------------------------------------
