@@ -198,9 +198,8 @@ class Dashboard extends BaseController
 
     public function update($id)
     {
-
         //cek username
-        $dashboardLama = $this->dashboardModel->getDashboard($this->request->getVar('slug'));
+        $dashboardLama = $this->DashboardModel->getDashboard($this->request->getVar('slug'));
         if ($dashboardLama['username'] == $this->request->getVar('username')) {
             $rule_username = 'required';
         } else {
@@ -208,7 +207,7 @@ class Dashboard extends BaseController
         }
 
         //cek email
-        $dashboardLama = $this->DdshboardModel->getDashboard($this->request->getVar('slug'));
+        $dashboardLama = $this->DashboardModel->getDashboard($this->request->getVar('slug'));
         if ($dashboardLama['email'] == $this->request->getVar('email')) {
             $rule_email = 'required';
         } else {
@@ -250,7 +249,7 @@ class Dashboard extends BaseController
                 ]
             ]
         ])) {
-            return redirect()->to('/Home/edit/' . $this->request->getVar('slug'))->withInput();
+            return redirect()->to('/dashboard/edit/' . $this->request->getVar('slug'))->withInput();
         }
 
         $fileFoto = $this->request->getFile('foto');
@@ -262,10 +261,10 @@ class Dashboard extends BaseController
             //generate nama foto random
             $namaFoto = $fileFoto->getRandomName();
             //pindahkan foto
-            $fileFoto->move('assets/img/admin', $namaFoto);
+            $fileFoto->move('assets/images/pp', $namaFoto);
             //hapus foto yang lama
             if ($this->request->getVar('fotoLama') != 'default2.jpg') {
-                unlink('assets/img/admin/' . $this->request->getVar('fotoLama'));
+                unlink('assets/images/pp/' . $this->request->getVar('fotoLama'));
             }
         }
 
@@ -281,7 +280,7 @@ class Dashboard extends BaseController
 
         session()->setFlashdata('pesan', 'Data pengguna berhasil diubah');
 
-        return redirect()->to('/Home/index');
+        return redirect()->to('/dashboard/pengguna');
     }
 
     public function editpassword($slug)
