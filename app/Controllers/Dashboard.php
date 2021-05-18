@@ -182,7 +182,7 @@ class Dashboard extends BaseController
 
         $this->DashboardModel->delete($id);
         session()->setFlashdata('pesan', 'Data pengguna berhasil dihapus');
-        return redirect()->to('/dashboard/index');
+        return redirect()->to('/dashboard/pengguna');
     }
 
     public function edit($slug)
