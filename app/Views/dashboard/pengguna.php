@@ -65,8 +65,7 @@
                                             </td>
                                             <td>
                                                 <div class="buttons">
-                                                    <a href="#" class="btn btn-primary fa fa-user"></a>
-                                                    <a href="#" class="btn btn-success fa fa-edit"></a>
+                                                    <a href="/dashboard/detail/<?= $k['slug']; ?>" class="btn btn-primary fa fa-user"></a>
                                                     <a href="#" class="btn btn-warning fas fa-key"></a>
                                                     <form action="/dashboard/<?= $k['id']; ?>" method="post" class="d-inline">
                                                         <?= csrf_field(); ?>
