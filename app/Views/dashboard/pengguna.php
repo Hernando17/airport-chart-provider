@@ -68,7 +68,7 @@
                                                     <a href="#" class="btn btn-primary fa fa-user"></a>
                                                     <a href="#" class="btn btn-success fa fa-edit"></a>
                                                     <a href="#" class="btn btn-warning fas fa-key"></a>
-                                                    <form action="/Home/<?= $k['id']; ?>" method="post" class="d-inline">
+                                                    <form action="/dashboard/<?= $k['id']; ?>" method="post" class="d-inline">
                                                         <?= csrf_field(); ?>
                                                         <input type="hidden" name="_method" value="DELETE">
                                                         <button type="submit" class="btn btn-danger  fas fa-trash" onclick="return confirm('Apakah anda yakin?');"></button>
