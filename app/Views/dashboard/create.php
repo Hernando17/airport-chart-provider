@@ -14,7 +14,7 @@
                     <h1 class="auth-title">Add New Account</h1>
                     <p class="auth-subtitle mb-5">Input your data to register to our website.</p>
 
-                    <form action="/Home/save" method="post" enctype="multipart/form-data">
+                    <form action="/Dashboard/save" method="post" enctype="multipart/form-data">
                         <?= csrf_field(); ?>
 
                         <select name="level" id="">
