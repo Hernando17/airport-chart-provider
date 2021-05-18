@@ -11,8 +11,8 @@ class Auth extends Controller
     public function login()
     {
         $model = new AuthModel;
-        $table = 'akun_admin';
-        $username = $this->request->getPost('usernane');
+        $table = 'user';
+        $username = $this->request->getPost('username');
         $password = $this->request->getPost('password');
         $row = $model->get_data_login($username, $table);
 
@@ -31,7 +31,7 @@ class Auth extends Controller
             );
             session()->set($data);
             session()->setFlashdata('pesan', 'Berhasil Masuk');
-            return redirect()->to('/Home/Dashboard');
+            return redirect()->to('/Dashboard/index');
         };
         session()->setFlashdata('pesan', 'Kata Sandi salah');
         return redirect()->to('/login');

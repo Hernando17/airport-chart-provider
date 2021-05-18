@@ -202,11 +202,16 @@
                 <div class="card-body py-4 px-5">
                     <div class="d-flex align-items-center">
                         <div class="avatar avatar-xl">
-                            <img src="<?= base_url(); ?>/assets/images/faces/1.jpg" alt="Face 1">
+                            <img src="<?= base_url(); ?>/assets/images/pp/<?= session()->get('foto'); ?>" alt="Face 1">
                         </div>
                         <div class="ms-3 name">
-                            <h5 class="font-bold">John Duck</h5>
-                            <h6 class="text-muted mb-0">@johnducky</h6>
+                            <h5 class="font-bold"></h5>
+                            <h6 class="text-muted mb-0"><?= session()->get('username'); ?></h6>
+                            <p class="text-muted mb-0"><?= session()->get('level'); ?></p>
+                            <hr>
+                            <a href="/auth/logout" style="margin-right: 50px;" data-toggle="modal" data-target="#logoutModal">
+                                Logout
+                            </a>
                         </div>
                     </div>
                 </div>

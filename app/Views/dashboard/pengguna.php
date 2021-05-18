@@ -33,7 +33,7 @@
                                     <?= session()->getFlashdata('pesan'); ?>
                                 </div>
                             <?php endif; ?>
-                            <a href="/Home/create" class="mb-4 btn btn-success fas fa-user-plus" style="float:right; margin-right:20px;margin-top:20px;"></a>
+                            <a href="/Dashboard/create" class="mb-4 btn btn-success fas fa-user-plus" style="float:right; margin-right:20px;margin-top:20px;"></a>
                             <table class="table table-bordered mb-0">
                                 <thead>
                                     <tr>

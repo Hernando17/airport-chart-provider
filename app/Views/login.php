@@ -23,32 +23,26 @@
                     </div> -->
                     <h1 class="auth-title">Masuk</h1>
                     <p class="auth-subtitle mb-5">Masukkan Nama Pengguna dan Kata Sandi</p>
-
-                    <form action="index.html">
+                    <?php if (session()->getFlashdata('pesan')) : ?>
+                        <div class="alert alert-danger" role="alert">
+                            <?= session()->get('pesan'); ?>
+                        </div>
+                    <?php endif; ?>
+                    <form action="Auth/login" method="post">
                         <div class="form-group position-relative has-icon-left mb-4">
-                            <input type="text" class="form-control form-control-xl" placeholder="Nama Pengguna">
+                            <input type="text" class="form-control form-control-xl" placeholder="Nama Pengguna" name="username">
                             <div class="form-control-icon">
                                 <i class="bi bi-person"></i>
                             </div>
                         </div>
                         <div class="form-group position-relative has-icon-left mb-4">
-                            <input type="password" class="form-control form-control-xl" placeholder="Kata Sandi">
+                            <input type="password" class="form-control form-control-xl" placeholder="Kata Sandi" name="password">
                             <div class="form-control-icon">
                                 <i class="bi bi-shield-lock"></i>
                             </div>
                         </div>
-                        <div class="form-check form-check-lg d-flex align-items-end">
-                            <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label text-gray-600" for="flexCheckDefault">
-                                Ingatkan saya
-                            </label>
-                        </div>
-                        <button class="btn btn-primary btn-block btn-lg shadow-lg mt-5">Masuk</button>
+                        <button value="submit" class="btn btn-primary btn-block btn-lg shadow-lg mt-5">Masuk</button>
                     </form>
-                    <div class="text-center mt-5 text-lg fs-4">
-                        <p class="text-gray-600">Belum memiliki akun? <a href="auth-register.html" class="font-bold"> Daftar</a></p>
-                        <p><a class="font-bold" href="auth-forgot-password.html">Lupa Kata Sandi</a></p>
-                    </div>
                 </div>
             </div>
             <div class="col-lg-7 d-none d-lg-block">
