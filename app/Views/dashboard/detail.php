@@ -19,7 +19,7 @@
                         <p class="card-text "><small class="text-muted">Waktu Bergabung : <?= $user['created_at']; ?></small></p>
                         <p class="card-text "><small class="text-muted">Update Terakhir : <?= $user['updated_at']; ?></small></p>
                         <a href="/dashboard/pengguna" class="btn btn-primary fas fa-chevron-circle-left"> Kembali</a>
-                        <a href="/dashboard/edit/<?= $user['slug']; ?>" class="btn btn-success fa fa-edit"> Ubah</a>
+                        <a href="/dashboard/detail/edit/<?= $user['slug']; ?>" class="btn btn-success fa fa-edit"> Ubah</a>
 
 
 
