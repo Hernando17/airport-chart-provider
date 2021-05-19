@@ -8,7 +8,7 @@
         <div class="row h-100">
             <div class="col-lg-5 col-12">
                 <div id="auth-left">
-                    <h1 class="auth-title">Tambah Akun Baru</h1>
+                    <h1 class="auth-title">Tambah Pengguna Baru</h1>
                     <p class="auth-subtitle mb-5">Masukkan Data</p>
 
                     <form action="/Dashboard/save" method="post" enctype="multipart/form-data">
@@ -45,7 +45,7 @@
                         <i><input class="form-control <?= ($validation->hasError('foto')) ? 'is-invalid' : ''; ?>" type="file" id="foto" name="foto" value="<?= old('foto'); ?>"></i>
 
 
-                        <button type="submit" class="btn btn-primary btn-block btn-lg shadow-lg mt-5">Create</button>
+                        <button type="submit" class="btn btn-primary btn-block btn-lg shadow-lg mt-5">Tambah</button>
                     </form>
                 </div>
             </div>
