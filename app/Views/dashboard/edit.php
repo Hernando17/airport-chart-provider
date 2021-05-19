@@ -34,7 +34,10 @@
                                 <i class="bi bi-person"></i>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-block btn-lg shadow-lg mt-5">Ubah</button>
+
+                        <i><input class="form-control <?= ($validation->hasError('foto')) ? 'is-invalid' : ''; ?>" type="file" id="foto" name="foto"></i>
+
+                        <button type=" submit" class="btn btn-primary btn-block btn-lg shadow-lg mt-5">Ubah</button>
                     </form>
                 </div>
             </div>

@@ -4,8 +4,8 @@ namespace App\Controllers;
 
 use CodeIgniter\Controller;
 use App\Models\DashboardModel;
+use App\Models\UsersModel;
 use App\Controllers\BaseController;
-
 use App\Models\CountModel;
 
 class Dashboard extends BaseController
@@ -249,7 +249,7 @@ class Dashboard extends BaseController
                 ]
             ]
         ])) {
-            return redirect()->to('/dashboard/edit/' . $this->request->getVar('slug'))->withInput();
+            return redirect()->to('/dashboard/detail/edit/' . $this->request->getVar('slug'))->withInput();
         }
 
         $fileFoto = $this->request->getFile('foto');
