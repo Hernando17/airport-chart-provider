@@ -66,7 +66,7 @@
                                             <td>
                                                 <div class="buttons">
                                                     <a href="/dashboard/detail/<?= $k['slug']; ?>" class="btn btn-primary fa fa-user"></a>
-                                                    <a href="#" class="btn btn-warning fas fa-key"></a>
+                                                    <a href="/dashboard/editpassword/<?= $k['slug']; ?>" class="btn btn-warning fas fa-key"></a>
                                                     <form action="/dashboard/<?= $k['id']; ?>" method="post" class="d-inline">
                                                         <?= csrf_field(); ?>
                                                         <input type="hidden" name="_method" value="DELETE">
