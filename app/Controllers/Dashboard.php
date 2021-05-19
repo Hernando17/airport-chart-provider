@@ -30,7 +30,7 @@ class Dashboard extends BaseController
         }
 
         $data = [
-            'title' => 'Control Panel | Table Admin',
+            'title' => 'Dashbor | Data Pengguna',
             'user' => $orang->paginate(10, 'user'),
             'pager' => $this->DashboardModel->pager,
             'currentPage' => $currentPage
@@ -58,7 +58,7 @@ class Dashboard extends BaseController
         }
 
         $data = [
-            'title' => 'Control Panel | Table Admin',
+            'title' => 'Dasbor | Beranda',
             'user' => $orang->paginate(10, 'user'),
             'pager' => $this->DashboardModel->pager,
             'currentPage' => $currentPage
@@ -71,7 +71,7 @@ class Dashboard extends BaseController
     {
 
         $data = [
-            'title' => 'Control Panel | Detail Admin',
+            'title' => 'Dasbor | Detail Pengguna',
             'user' => $this->DashboardModel->getDashboard($slug)
         ];
 
@@ -87,7 +87,7 @@ class Dashboard extends BaseController
     {
 
         $data = [
-            'title' => 'Control Panel | Tambah Admin',
+            'title' => 'Dasbor | Tambah Pengguna',
             'validation' => \Config\Services::validation()
         ];
 
@@ -188,7 +188,7 @@ class Dashboard extends BaseController
     public function edit($slug)
     {
         $data = [
-            'title' => 'Control Panel | Edit Admin',
+            'title' => 'Dasbor | Ubah Data',
             'validation' => \Config\Services::validation(),
             'user' => $this->DashboardModel->getDashboard($slug)
         ];
@@ -284,7 +284,7 @@ class Dashboard extends BaseController
     public function editpassword($slug)
     {
         $data = [
-            'title' => 'Control Panel | Edit Password Admin',
+            'title' => 'Dasbor | Ubah Kata Sandi',
             'validation' => \Config\Services::validation(),
             'user' => $this->DashboardModel->getDashboard($slug)
         ];

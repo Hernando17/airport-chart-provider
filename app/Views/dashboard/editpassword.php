@@ -7,8 +7,8 @@
         <div class="row h-100">
             <div class="col-lg-5 col-12">
                 <div id="auth-left">
-                    <h1 class="auth-title">Ubah Data</h1>
-                    <p class="auth-subtitle mb-5">Input your data to register to our website.</p>
+                    <h1 class="auth-title">Ubah Kata Sandi</h1>
+                    <p class="auth-subtitle mb-5">Masukkan Kata Sandi Baru</p>
 
                     <form action="/Dashboard/updatepassword/<?= $user['id']; ?>" method="post" enctype="multipart/form-data">
                         <?= csrf_field(); ?>
@@ -18,7 +18,7 @@
                         <br>
                         <br>
                         <div class="form-group position-relative has-icon-left mb-4">
-                            <input type="password" class="form-control form-control-xl <?= ($validation->hasError('password')) ? 'is-invalid' : ''; ?>" id="password" placeholder="password" name="password" value="">
+                            <input type="password" class="form-control form-control-xl <?= ($validation->hasError('password')) ? 'is-invalid' : ''; ?>" id="password" placeholder="Kata Sandi" name="password" value="">
                             <div class="form-control-icon">
                                 <i class="bi bi-envelope"></i>
                             </div>
