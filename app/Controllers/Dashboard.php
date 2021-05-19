@@ -214,7 +214,6 @@ class Dashboard extends BaseController
             $rule_email = 'required|is_unique[user.email]';
         }
 
-
         if (!$this->validate([
             'level' => [
                 'rules'  => 'required',
@@ -244,7 +243,6 @@ class Dashboard extends BaseController
                     'max_size' => 'Ukuran gambar terlalu besar',
                     'is_image' => 'Yang anda pilih bukan gambar',
                     'mime_in' => 'Hanya mendukung format JPG/JPEG',
-
 
                 ]
             ]
@@ -288,7 +286,7 @@ class Dashboard extends BaseController
         $data = [
             'title' => 'Control Panel | Edit Password Admin',
             'validation' => \Config\Services::validation(),
-            'akun_admin' => $this->DashboardModel->getDashboard($slug)
+            'user' => $this->DashboardModel->getDashboard($slug)
         ];
 
         return view('dashboard/editpassword', $data);
@@ -296,46 +294,25 @@ class Dashboard extends BaseController
 
     public function updatepassword($id)
     {
-
-        //cek username
-        $dashboardLama = $this->dashboardModel->getDashboard($this->request->getVar('slug'));
-        if ($dashboardLama['username'] == $this->request->getVar('username')) {
-            $rule_username = 'required';
-        } else {
-            $rule_username = 'required|is_unique[user.username]|max_length[12]';
-        }
-
-        //cek email
-        $dashboardLama = $this->dashboardModel->getDashboard($this->request->getVar('slug'));
-        if ($dashboardLama['email'] == $this->request->getVar('email')) {
-            $rule_email = 'required';
-        } else {
-            $rule_email = 'required|is_unique[user.email]';
-        }
-
-
         if (!$this->validate([
             'password' => [
                 'rules'  => 'required',
                 'errors' => [
                     'required' => 'Password harus diisi'
-
                 ]
             ],
 
-
         ])) {
-            return redirect()->to('/Home/editpassword/' . $this->request->getVar('slug'))->withInput();
+            return redirect()->to('/dashboard/editpassword/' . $this->request->getVar('slug'))->withInput();
         }
         $slug = url_title($this->request->getVar('password'), '-', true);
-        $this->dashboardModel->save([
+        $this->DashboardModel->save([
             'id' => $id,
             'password' => password_hash($_POST['password'], PASSWORD_DEFAULT),
             'slug' => $slug
         ]);
 
         session()->setFlashdata('pesan', 'Password Admin berhasil diubah');
-
-        return redirect()->to('/Home/index');
+        return redirect()->to('/dashboard/pengguna');
     }
 }

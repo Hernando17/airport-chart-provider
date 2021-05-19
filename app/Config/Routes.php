@@ -39,6 +39,7 @@ $routes->get('/dashboard/index', 'Dashboard::index');
 $routes->get('/dashboard/pengguna', 'Dashboard::pengguna');
 $routes->get('/dashboard/create', 'Dashboard::create');
 $routes->get('/dashboard/detail/edit/(:segment)', 'Dashboard::edit/$1');
+$routes->get('/dashboard/editpassword/(:segment)', 'Dashboard::editpassword/$1');
 $routes->delete('/dashboard/(:num)', 'Dashboard::delete/$1');
 $routes->get('/dashboard/detail/(:any)', 'Dashboard::detail/$1');
 /*
