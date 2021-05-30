@@ -31,19 +31,11 @@
                 </li>
 
                 <li class="sidebar-item  ">
-                    <a href="table.html" class='sidebar-link'>
+                    <a href="/chart/index" class='sidebar-link'>
                         <i class="bi bi-grid-1x2-fill"></i>
                         <span>Data Chart</span>
                     </a>
                 </li>
-
-                <li class="sidebar-item  ">
-                    <a href="table-datatable.html" class='sidebar-link'>
-                        <i class="bi bi-file-earmark-spreadsheet-fill"></i>
-                        <span>Datatable</span>
-                    </a>
-                </li>
-
                 <!-- <li class="sidebar-title">Extra UI</li>
 
                 <li class="sidebar-item  has-sub">
