@@ -45,6 +45,7 @@ $routes->get('/dashboard/detail/(:any)', 'Dashboard::detail/$1');
 
 $routes->get('/chart/index', 'Chart::index');
 $routes->get('/chart/create', 'Chart::create');
+$routes->delete('/chart/(:num)', 'Chart::delete/$1');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

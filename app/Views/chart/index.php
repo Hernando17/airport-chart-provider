@@ -44,7 +44,7 @@
                                                 <?= $k['id']; ?>
                                             </td>
                                             <td>
-                                                <img class="rounded-circle" style="margin-left:10px;" src="/assets/images/chart/<?= $k['foto']; ?>" width="50px">
+                                                <img style="margin-left:10px;" src="/assets/images/chart/<?= $k['foto']; ?>" width="50px">
                                             </td>
                                             <td>
                                                 <?= $k['icao']; ?>
