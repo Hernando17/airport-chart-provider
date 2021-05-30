@@ -10,7 +10,7 @@ class ChartModel extends Model
     protected $useTimestamps = true;
     protected $allowedFields = ['icao', 'bandara', 'file', 'keterangan', 'slug', 'foto'];
 
-    public function getDashboard($slug = false)
+    public function getChart($slug = false)
     {
         if ($slug == false) {
             return $this->findAll();

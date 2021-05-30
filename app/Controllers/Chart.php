@@ -160,6 +160,10 @@ class Chart extends BaseController
             //hapus gambar
             unlink('assets/images/chart/' . $chart['foto']);
         }
+        if ($chart['file'] != 'filekosong.pdf') {
+            //hapus gambar
+            unlink('assets/file/pdf/' . $chart['file']);
+        }
 
 
         $this->ChartModel->delete($id);
