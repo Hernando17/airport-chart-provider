@@ -57,7 +57,7 @@ class Chart extends BaseController
         if (empty($data['chart'])) {
             throw new \CodeIgniter\Exceptions\PageNotFoundException('Data Pengguna ' . $slug . ' tidak ditemukan');
         }
-        return view('dashboard/detail', $data);
+        return view('chart/detail', $data);
     }
 
     public function create()

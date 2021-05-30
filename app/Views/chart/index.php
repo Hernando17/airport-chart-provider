@@ -54,10 +54,11 @@
                                             </td>
                                             <td>
                                                 <div class="buttons">
-                                                    <a href="/dashboard/detail/<?= $k['slug']; ?>" class="btn btn-primary fa fa-user"></a <form action="/dashboard/<?= $k['id']; ?>" method="post" class="d-inline">
-                                                    <?= csrf_field(); ?>
-                                                    <input type="hidden" name="_method" value="DELETE">
-                                                    <button type="submit" class="btn btn-danger  fas fa-trash" onclick="return confirm('Apakah anda yakin?');"></button>
+                                                    <a href="/chart/detail/<?= $k['slug']; ?>" class="btn btn-primary fa fa-user"></a>
+                                                    <form action="/chart/<?= $k['id']; ?>" method="post" class="d-inline">
+                                                        <?= csrf_field(); ?>
+                                                        <input type="hidden" name="_method" value="DELETE">
+                                                        <button type="submit" class="btn btn-danger  fas fa-trash" onclick="return confirm('Apakah anda yakin?');"></button>
                                                     </form>
                                             </td>
                         </div>
