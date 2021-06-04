@@ -18,17 +18,17 @@
     <main>
 
         <!-- slider Area Start-->
-        <div class="slider-area  slider-height" data-background="assets/img/hero/h1_hero.jpg">
+        <div class="slider-area  slider-height" data-background="assets/img/hero/out.png">
             <div class="slider-active">
                 <!-- Single Slider -->
                 <div class="single-slider">
                     <div class="slider-cap-wrapper">
                         <div class="hero__img">
-                            <img src="assets/img/hero/hero_img.jpg" alt="" data-animation="fadeInRight" data-transition-duration="5s">
+                            <img src="assets/img/hero/cockpit.png" alt="" data-animation="fadeInRight" data-transition-duration="5s">
                         </div>
                         <div class="hero__caption">
-                            <h1 data-animation="fadeInLeft" data-delay=".4s">Business Synergy via <br>Robust Strategies</h1>
-                            <p data-animation="fadeInLeft" data-delay=".6s">Aasrem dfgum dolor sivst amet, consectetur adipisicing elitvde, sed dvo eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad micnim veniam, quis nostrud exercita.</p>
+                            <h1 data-animation="fadeInLeft" data-delay=".4s">Pilot Gaming Indo <br>Center</h1>
+                            <p style="font-color:red;" data-animation="fadeInLeft" data-delay=".6s">Memfasilitasi kebutuhan bagi para flightsimer serta memudahkan dalam pencarian informasi terkait dunia fligth simulator dari addon hingga livery </p>
                             <!-- Hero Btn -->
                             <a href="#" class="hero-btn" data-animation="fadeInLeft" data-delay=".9s">
                                 View project
@@ -136,14 +136,13 @@
             <!-- left Contents -->
             <div class="tailor-details">
                 <span>All of our Skills In The Fild</span>
-                <h3>Differentiate Yourself And <br>Attractive Attention</h3>
-                <p>Tempor incididunt ut labore et cvhjfhore magna aliqua. Ut<br> enim ad minim veniam, quis.</p>
+                <h3>Popularitas <br>Flight Simulator</h3>
                 <!-- skill Start -->
                 <div class="skill-ara">
                     <div class="skill">
                         <div class="single-skill">
                             <div class="progress-count">
-                                <p>User Interface</p><span>75%</span>
+                                <p>X-Plane 11</p><span>75%</span>
                             </div>
                             <div class="progress">
                                 <div class="progress-bar wow slideInLeft" data-wow-duration="1s" data-wow-delay=".5s" aria-valuenow="25" role="progressbar" style="width: 75%" aria-valuemin="0" aria-valuemax="100"></div>
@@ -151,7 +150,7 @@
                         </div>
                         <div class="single-skill">
                             <div class="progress-count">
-                                <p>Digital Marketing</p><span>89%</span>
+                                <p>Prepar3d</p><span>89%</span>
                             </div>
                             <div class="progress">
                                 <div class="progress-bar wow slideInLeft" data-wow-duration="1s" data-wow-delay=".7s" role="progressbar" style="width: 89%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
@@ -159,7 +158,7 @@
                         </div>
                         <div class="single-skill">
                             <div class="progress-count">
-                                <p>User Interface</p><span>95%</span>
+                                <p>Flight Simulator 2020</p><span>50%</span>
                             </div>
                             <div class="progress">
                                 <div class="progress-bar wow slideInLeft" data-wow-duration="1s" data-wow-delay=".6s" role="progressbar" style="width: 95%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
