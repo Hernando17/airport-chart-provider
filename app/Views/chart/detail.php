@@ -6,7 +6,7 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <h2 class="mt-2">Detail Pengguna</h2>
+            <h2 class="mt-2">Detail Chart</h2>
             <div class="row g-0">
                 <div class="col-md-2.5 img-fluid">
                     <img src="<?= base_url(); ?>/assets/images/chart/<?= $chart['foto']; ?>" width="200px" height="200px" alt="..." style="float:left;" class="my-4 ml-2">

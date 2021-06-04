@@ -5,7 +5,7 @@
     <div class="page-title">
         <div class="row">
             <div class="col-12 col-md-6 order-md-1 order-last">
-                <h3>Data Pengguna</h3>
+                <h3>Data Chart</h3>
                 <p class="text-subtitle text-muted">Database MySQL</p>
             </div>
             <div class="col-12 col-md-6 order-md-2 order-first">

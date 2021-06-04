@@ -156,7 +156,7 @@ class Chart extends BaseController
         $chart = $this->ChartModel->find($id);
 
         //cek jika file gambarnya default.jpg
-        if ($chart['foto'] != 'defaultchart.png') {
+        if ($chart['foto'] != 'defaultchart.jpg') {
             //hapus gambar
             unlink('assets/images/chart/' . $chart['foto']);
         }
@@ -174,97 +174,114 @@ class Chart extends BaseController
     public function edit($slug)
     {
         $data = [
-            'title' => 'Dasbor | Ubah Data',
+            'title' => 'Dasbor | Tambah Pengguna',
             'validation' => \Config\Services::validation(),
-            'user' => $this->ChartModel->getDashboard($slug)
+            'chart' => $this->ChartModel->getChart($slug)
         ];
 
-        return view('dashboard/edit', $data);
+        return view('chart/edit', $data);
     }
 
     public function update($id)
     {
-        //cek username
-        $dashboardLama = $this->ChartModel->getDashboard($this->request->getVar('slug'));
-        if ($dashboardLama['username'] == $this->request->getVar('username')) {
-            $rule_username = 'required';
+        //cek judul
+        $chartLama = $this->ChartModel->getChart($this->request->getVar('slug'));
+        $fileLama = $this->ChartModel->getChart($this->request->getVar('slug'));
+
+        if ($chartLama['icao'] == $this->request->getVar('icao')) {
+            $rule_icao = 'required';
         } else {
-            $rule_username = 'required|is_unique[user.username]|max_length[12]';
+            $rule_icao = 'required|is_unique[chart.icao]';
         }
 
-        //cek email
-        $dashboardLama = $this->ChartModel->getDashboard($this->request->getVar('slug'));
-        if ($dashboardLama['email'] == $this->request->getVar('email')) {
-            $rule_email = 'required';
-        } else {
-            $rule_email = 'required|is_unique[user.email]';
-        }
-
+        //Melakukan validasi
         if (!$this->validate([
-            'level' => [
-                'rules'  => 'required',
-                'errors' => [
-                    'required' => 'Level harus diisi'
-
-                ]
-            ],
-            'username' => [
-                'rules'  => $rule_username,
-                'errors' => [
-                    'required' => 'Username harus diisi',
-                    'is_unique' => 'Username sudah terdaftar',
-                    'max_length' => 'Maksimal Username adalah 12 digit'
-                ]
-            ],
-            'email' => [
-                'rules'  => $rule_email,
-                'errors' => [
-                    'required' => 'Email harus diisi',
-                    'is_unique' => 'Email sudah terdaftar'
-                ]
-            ],
             'foto' => [
                 'rules' => 'max_size[foto,1024]|is_image[foto]|mime_in[foto,image/jpg,image/jpeg]',
                 'errors' => [
                     'max_size' => 'Ukuran gambar terlalu besar',
                     'is_image' => 'Yang anda pilih bukan gambar',
-                    'mime_in' => 'Hanya mendukung format JPG/JPEG',
+                    'mime_in' => 'Hanya mendukung format JPG/JPEG'
 
                 ]
-            ]
+            ],
+            'file' => [
+                'rules' => 'ext_in[file,pdf]',
+                'errors' => [
+                    'ext_in' => 'Hanya mendukung format file PDF'
+                ]
+            ],
+            'icao' => [
+                'rules'  => $rule_icao,
+                'errors' => [
+                    'required' => 'judul harus diisi',
+                    'is_unique' => 'judul sudah terdaftar'
+
+
+                ]
+            ],
+            'bandara' => [
+                'rules'  => 'required',
+                'errors' => [
+                    'required' => 'Nama Penulis harus diisi'
+
+                ]
+            ],
+
         ])) {
-            return redirect()->to('/dashboard/detail/edit/' . $this->request->getVar('slug'))->withInput();
+            return redirect()->to('/chart/detail/edit/' . $this->request->getVar('slug'))->withInput();
         }
 
+        //Melakukan deklarasi Variabel 
         $fileFoto = $this->request->getFile('foto');
+        $fileFile = $this->request->getFile('file');
+
 
         //cek gambar, apakah tetap gambar lama
         if ($fileFoto->getError() == 4) {
             $namaFoto = $this->request->getVar('fotoLama');
         } else {
+
             //generate nama foto random
             $namaFoto = $fileFoto->getRandomName();
             //pindahkan foto
-            $fileFoto->move('assets/images/pp', $namaFoto);
+            $fileFoto->move('assets/images/chart', $namaFoto);
             //hapus foto yang lama
-            if ($this->request->getVar('fotoLama') != 'default2.jpg') {
-                unlink('assets/images/pp/' . $this->request->getVar('fotoLama'));
+            if ($this->request->getVar('fotoLama') != 'defaultchart.jpg') {
+                unlink('assets/images/chart/' . $this->request->getVar('fotoLama'));
             }
         }
 
-        $slug = url_title($this->request->getVar('username'), '-', true);
+        //cek file, apakah tetap file lama
+        if ($fileFile->getError() == 4) {
+            $namaFile = $this->request->getVar('fileLama');
+        } else {
+
+            //generate nama foto random
+            $namaFile = $fileFile->getRandomName();
+            //pindahkan foto
+            $fileFile->move('assets/file/pdf', $namaFile);
+            //hapus foto yang lama
+            if ($this->request->getVar('fileLama') != 'filekosong.pdf') {
+                unlink('assets/file/pdf/' . $this->request->getVar('fileLama'));
+            }
+        }
+
+
+        $slug = url_title($this->request->getVar('icao'), '-', true);
         $this->ChartModel->save([
             'id' => $id,
-            'level' => $this->request->getVar('level'),
             'foto' => $namaFoto,
-            'username' => $this->request->getVar('username'),
-            'email' => $this->request->getVar('email'),
-            'slug' => $slug
+            'icao' => $this->request->getVar('icao'),
+            'bandara' => $this->request->getVar('bandara'),
+            'keterangan' => $this->request->getVar('keterangan'),
+            'slug' => $slug,
+            'file' => $namaFile
         ]);
 
-        session()->setFlashdata('pesan', 'Data pengguna berhasil diubah');
+        session()->setFlashdata('pesan', 'Data Chart berhasil diubah');
 
-        return redirect()->to('/dashboard/pengguna');
+        return redirect()->to('/Chart/index');
     }
 
     public function editpassword($slug)
