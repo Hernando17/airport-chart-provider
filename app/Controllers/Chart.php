@@ -35,7 +35,7 @@ class Chart extends BaseController
         }
 
         $data = [
-            'title' => 'Dasbor | Beranda',
+            'title' => 'Dasbor | Data Chart',
             'chart' => $flight->paginate(10, 'chart'),
             'pager' => $this->ChartModel->pager,
             'currentPage' => $currentPage
@@ -48,7 +48,7 @@ class Chart extends BaseController
     {
 
         $data = [
-            'title' => 'Dasbor | Detail Pengguna',
+            'title' => 'Dasbor | Detail Chart',
             'chart' => $this->ChartModel->getChart($slug)
         ];
 
@@ -64,7 +64,7 @@ class Chart extends BaseController
     {
 
         $data = [
-            'title' => 'Dasbor | Tambah Pengguna',
+            'title' => 'Dasbor | Tambah Chart',
             'validation' => \Config\Services::validation()
         ];
 
@@ -145,7 +145,7 @@ class Chart extends BaseController
             'slug' => $slug
         ]);
 
-        session()->setFlashdata('pesan', 'Data pengguna berhasil ditambahkan');
+        session()->setFlashdata('pesan', 'Data Chart berhasil ditambahkan');
 
         return redirect()->to('/chart/index');
     }
@@ -167,7 +167,7 @@ class Chart extends BaseController
 
 
         $this->ChartModel->delete($id);
-        session()->setFlashdata('pesan', 'Chart berhasil dihapus');
+        session()->setFlashdata('pesan', 'Data Chart berhasil dihapus');
         return redirect()->to('/chart/index');
     }
 
@@ -267,7 +267,6 @@ class Chart extends BaseController
             }
         }
 
-
         $slug = url_title($this->request->getVar('icao'), '-', true);
         $this->ChartModel->save([
             'id' => $id,
@@ -282,40 +281,5 @@ class Chart extends BaseController
         session()->setFlashdata('pesan', 'Data Chart berhasil diubah');
 
         return redirect()->to('/Chart/index');
-    }
-
-    public function editpassword($slug)
-    {
-        $data = [
-            'title' => 'Dasbor | Ubah Kata Sandi',
-            'validation' => \Config\Services::validation(),
-            'user' => $this->ChartModel->getDashboard($slug)
-        ];
-
-        return view('dashboard/editpassword', $data);
-    }
-
-    public function updatepassword($id)
-    {
-        if (!$this->validate([
-            'password' => [
-                'rules'  => 'required',
-                'errors' => [
-                    'required' => 'Password harus diisi'
-                ]
-            ],
-
-        ])) {
-            return redirect()->to('/dashboard/editpassword/' . $this->request->getVar('slug'))->withInput();
-        }
-        $slug = url_title($this->request->getVar('password'), '-', true);
-        $this->ChartModel->save([
-            'id' => $id,
-            'password' => password_hash($_POST['password'], PASSWORD_DEFAULT),
-            'slug' => $slug
-        ]);
-
-        session()->setFlashdata('pesan', 'Password Admin berhasil diubah');
-        return redirect()->to('/dashboard/pengguna');
     }
 }

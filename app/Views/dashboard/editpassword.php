@@ -20,7 +20,7 @@
                         <div class="form-group position-relative has-icon-left mb-4">
                             <input type="password" class="form-control form-control-xl <?= ($validation->hasError('password')) ? 'is-invalid' : ''; ?>" id="password" placeholder="Kata Sandi" name="password" value="">
                             <div class="form-control-icon">
-                                <i class="bi bi-envelope"></i>
+                                <i class="bi bi-shield-lock"></i>
                             </div>
                         </div>
 

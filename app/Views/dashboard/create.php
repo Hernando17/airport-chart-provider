@@ -24,13 +24,13 @@
                         <div class="form-group position-relative has-icon-left mb-4">
                             <input type="text" class="form-control form-control-xl <?= ($validation->hasError('username')) ? 'is-invalid' : ''; ?>" placeholder="Nama" name="username" autofocus value="<?= old('username'); ?>">
                             <div class="form-control-icon">
-                                <i class="bi bi-envelope"></i>
+                                <i class="bi bi-person"></i>
                             </div>
                         </div>
                         <div class="form-group position-relative has-icon-left mb-4">
                             <input type="text" class="form-control form-control-xl <?= ($validation->hasError('email')) ? 'is-invalid' : ''; ?>" placeholder="Email" name="email" value="<?= old('email'); ?>">
                             <div class="form-control-icon">
-                                <i class="bi bi-person"></i>
+                                <i class=" bi bi-envelope"></i>
                             </div>
                         </div>
 

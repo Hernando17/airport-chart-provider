@@ -7,8 +7,8 @@
         <div class="row h-100">
             <div class="col-lg-5 col-12">
                 <div id="auth-left">
-                    <h1 class="auth-title">Ubah Data</h1>
-                    <p class="auth-subtitle mb-5">Input your data to register to our website.</p>
+                    <h1 class="auth-title">Ubah Data Pengguna</h1>
+                    <p class="auth-subtitle mb-5">Masukkan Data Pengguna Baru</p>
 
                     <form action="/Dashboard/update/<?= $user['id']; ?>" method="post" enctype="multipart/form-data">
                         <?= csrf_field(); ?>
@@ -25,13 +25,13 @@
                         <div class="form-group position-relative has-icon-left mb-4">
                             <input type="text" class="form-control form-control-xl <?= ($validation->hasError('username')) ? 'is-invalid' : ''; ?>" id="username" placeholder="Nama" name="username" value="<?= (old('username')) ? old('username') : $user['username']; ?>">
                             <div class="form-control-icon">
-                                <i class="bi bi-envelope"></i>
+                                <i class="bi bi-person"></i>
                             </div>
                         </div>
                         <div class="form-group position-relative has-icon-left mb-4">
                             <input type="text" class="form-control form-control-xl <?= ($validation->hasError('email')) ? 'is-invalid' : ''; ?>" id="email" placeholder="Email" name="email" value="<?= (old('email')) ? old('email') : $user['email']; ?>">
                             <div class="form-control-icon">
-                                <i class="bi bi-person"></i>
+                                <i class="bi bi-envelope"></i>
                             </div>
                         </div>
 

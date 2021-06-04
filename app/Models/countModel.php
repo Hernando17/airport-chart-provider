@@ -19,4 +19,11 @@ class countModel extends Model
 
         return $this->db->table('user')->countAll();
     }
+
+    public function tot_chart()
+
+    {
+
+        return $this->db->table('chart')->countAll();
+    }
 }

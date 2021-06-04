@@ -26,7 +26,7 @@
                                     <?= session()->getFlashdata('pesan'); ?>
                                 </div>
                             <?php endif; ?>
-                            <a href="/Chart/create" class="mb-4 btn btn-success fas fa-user-plus" style="float:right; margin-right:20px;margin-top:20px;"></a>
+                            <a href="/Chart/create" class="mb-4 btn btn-success fas fa-plus" style="float:right; margin-right:20px;margin-top:20px;"></a>
                             <table class="table table-bordered mb-0">
                                 <thead>
                                     <tr>
@@ -54,7 +54,7 @@
                                             </td>
                                             <td>
                                                 <div class="buttons">
-                                                    <a href="/chart/detail/<?= $k['slug']; ?>" class="btn btn-primary fa fa-user"></a>
+                                                    <a href="/chart/detail/<?= $k['slug']; ?>" class="btn btn-primary fas fa-copy"></a>
                                                     <form action="/chart/<?= $k['id']; ?>" method="post" class="d-inline">
                                                         <?= csrf_field(); ?>
                                                         <input type="hidden" name="_method" value="DELETE">
