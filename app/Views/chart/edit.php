@@ -7,8 +7,8 @@
         <div class="row h-100">
             <div class="col-lg-5 col-12">
                 <div id="auth-left">
-                    <h1 class="auth-title">Ubah Data</h1>
-                    <p class="auth-subtitle mb-5">Input your data to register to our website.</p>
+                    <h1 class="auth-title">Ubah Data Chart</h1>
+                    <p class="auth-subtitle mb-5">Masukkan Data Chart Baru</p>
 
                     <form action="/Chart/update/<?= $chart['id']; ?>" method="post" enctype="multipart/form-data">
                         <?= csrf_field(); ?>
@@ -21,19 +21,19 @@
                         <div class="form-group position-relative has-icon-left mb-4">
                             <input type="text" class="form-control form-control-xl <?= ($validation->hasError('icao')) ? 'is-invalid' : ''; ?>" id="icao placeholder=" ICAO" name="icao" value="<?= (old('icao')) ? old('icao') : $chart['icao']; ?>">
                             <div class="form-control-icon">
-                                <i class="bi bi-envelope"></i>
+                                <i class="bi bi-geo-alt"></i>
                             </div>
                         </div>
                         <div class="form-group position-relative has-icon-left mb-4">
                             <input type="text" class="form-control form-control-xl <?= ($validation->hasError('bandara')) ? 'is-invalid' : ''; ?>" id="bandara" placeholder="Bandara" name="bandara" value="<?= (old('bandara')) ? old('bandara') : $chart['bandara']; ?>">
                             <div class="form-control-icon">
-                                <i class="bi bi-person"></i>
+                                <i class="bi bi-building"></i>
                             </div>
                         </div>
                         <div class="form-group position-relative has-icon-left mb-4">
                             <input type="text" class="form-control form-control-xl <?= ($validation->hasError('keterangan')) ? 'is-invalid' : ''; ?>" id="keterangan" placeholder="Keterangan" name="keterangan" value="<?= (old('keterangan')) ? old('keterangan') : $chart['keterangan']; ?>">
                             <div class="form-control-icon">
-                                <i class="bi bi-person"></i>
+                                <i class="bi bi-text-paragraph"></i>
                             </div>
                         </div>
 

@@ -59,6 +59,8 @@ class Dashboard extends BaseController
 
         $data = [
             'title' => 'Dasbor | Beranda',
+            'tot_user' => $this->CountModel->tot_user(),
+            'tot_chart' => $this->CountModel->tot_chart(),
             'user' => $orang->paginate(10, 'user'),
             'pager' => $this->DashboardModel->pager,
             'currentPage' => $currentPage
