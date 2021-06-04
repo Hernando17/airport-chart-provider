@@ -16,22 +16,22 @@
                             <div class="main-menu f-right d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">
-                                        <li><a href="/">Home</a></li>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="services.html">Services</a></li>
-                                        <li><a href="work.html">Works</a></li>
+                                        <li><a href="/">Beranda</a></li>
+                                        <li><a href=".html">Tentang</a></li>
+                                        <li><a href="#">Addon</a></li>
+                                        <li><a href="work.html">Panduan</a></li>
                                         <li><a href="chart">Chart</a>
                                             <ul class="submenu">
-                                                <li><a href="blog.html">Blog</a></li>
-                                                <li><a href="single-blog.html">Blog Details</a></li>
+                                                <li><a href="blog.html">Jeppesen</a></li>
+                                                <li><a href="single-blog.html">-</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="#">Pages</a>
+                                        <li><a href="#">Flight Simulator</a>
                                             <ul class="submenu">
-                                                <li><a href="elements.html">Element</a></li>
+                                                <li><a href="elements.html">X-Plane 11</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="contact.html">Donasi</a></li>
                                     </ul>
                                 </nav>
                             </div>
