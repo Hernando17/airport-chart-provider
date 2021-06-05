@@ -77,7 +77,7 @@
                             </div>
                             <div class="services-cap">
                                 <h5>Aman</h5>
-                                <p>Addon yang kami sediakan 100% aman dari virus</p>
+                                <p>File yang kami sertakan di website ini bisa dipastikan 100% aman dari virus</p>
                             </div>
                         </div>
                     </div>
