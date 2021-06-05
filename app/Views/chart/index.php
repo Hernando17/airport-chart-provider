@@ -67,6 +67,10 @@
                     <?php endforeach; ?>
                     </tbody>
                     </table>
+                    <br>
+                    <div class="nomor">
+                        <?= $pager->links('chart', 'chart_pagination'); ?></p>
+                    </div>
                     </div>
                 </div>
             </div>
