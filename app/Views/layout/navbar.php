@@ -17,16 +17,16 @@
                                 <nav>
                                     <ul id="navigation">
                                         <li><a href="/">Beranda</a></li>
-                                        <li><a href=".html">Tentang</a></li>
+                                        <li><a href="#">Tentang</a></li>
                                         <li><a href="#">Addon</a></li>
-                                        <li><a href="work.html">Panduan</a></li>
+                                        <li><a href="#">Panduan</a></li>
                                         <li><a href="chart">Chart</a></li>
                                         <li><a href="#">Flight Simulator</a>
                                             <ul class="submenu">
-                                                <li><a href="elements.html">X-Plane 11</a></li>
+                                                <li><a href="#">X-Plane 11</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="contact.html">Donasi</a></li>
+                                        <li><a href="#">Donasi</a></li>
                                     </ul>
                                 </nav>
                             </div>
