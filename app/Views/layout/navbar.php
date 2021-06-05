@@ -20,12 +20,7 @@
                                         <li><a href=".html">Tentang</a></li>
                                         <li><a href="#">Addon</a></li>
                                         <li><a href="work.html">Panduan</a></li>
-                                        <li><a href="chart">Chart</a>
-                                            <ul class="submenu">
-                                                <li><a href="blog.html">Jeppesen</a></li>
-                                                <li><a href="single-blog.html">-</a></li>
-                                            </ul>
-                                        </li>
+                                        <li><a href="chart">Chart</a></li>
                                         <li><a href="#">Flight Simulator</a>
                                             <ul class="submenu">
                                                 <li><a href="elements.html">X-Plane 11</a></li>
@@ -34,11 +29,6 @@
                                         <li><a href="contact.html">Donasi</a></li>
                                     </ul>
                                 </nav>
-                            </div>
-                        </div>
-                        <div class="col-xl-2 col-lg-3 col-md-3">
-                            <div class="header-right-btn f-right d-none d-lg-block">
-                                <a href="/Auth/login" class="btn header-btn">Masuk</a>
                             </div>
                         </div>
                         <!-- Mobile Menu -->

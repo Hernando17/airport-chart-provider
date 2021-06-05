@@ -13,57 +13,71 @@
         </div>
     </div>
     <!-- Preloader Start -->
-
     <?= $this->include('layout/navbar'); ?>
-
     <main>
-
-        <!-- Hero Area Start -->
-        <div class="hero-area hero-height2 d-flex align-items-center" data-background="assets/img/hero/h2_hero.jpg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="hero-cap text-center pt-100">
-                            <h2>Chart</h2>
+        <!-- slider Area Start-->
+        <div class="slider-area  slider-height" data-background="assets/img/hero/out.png">
+            <div class="slider-active">
+                <!-- Single Slider -->
+                <div class="single-slider">
+                    <div class="slider-cap-wrapper">
+                        <div class="hero__img">
+                            <img src="assets/img/hero/chart.jpg" alt="" data-animation="fadeInRight" data-transition-duration="5s">
+                        </div>
+                        <div class="hero__caption">
+                            <h1 data-animation="fadeInLeft" data-delay=".4s">Chart</h1>
+                            <p data-animation="fadeInLeft" data-delay=".6s">Berikut merupakan Chart yang kami sediakan</p>
+                            <!-- Hero Btn -->
                         </div>
                     </div>
                 </div>
+                <!-- Single Slider -->
             </div>
         </div>
-        <!-- Hero Area End -->
-        <!-- About Details Start -->
-        <div class="about-details-area section-padding2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="about-tittle">
-                            <h2>About Us</h2>
+        <table class="table table-borderless table-dark mb-0">
+            <thead>
+                <th>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </th>
+                <th>
+                </th>
+                <th>
+                </th>
+                <th>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Contoh &#96;Chart&#96;" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="basic-addon2">Cari</span>
                         </div>
                     </div>
-                    <div class="col-lg-7">
-                        <div class="about-details mb-50">
-                            <p class="pear1">We believe that every project existing in digital world is a result of an idea and every idea has a cause. </p>
-                            <p class="pear2">Amet, consectetur adipisicing elit, sed dosmod tempor didunt ut labore et dolor dfagna iqus ad minim veniam quis. sectetur adipisicing eld do eiusmod tempor didunt ut labore et dolore magna aliqus ad minim.</p>
-                        </div>
+                    <div class="nomor">
+                        <?= $pager->links('chart', 'chart_pagination'); ?></p>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="about-tittle">
-                            <h2>Mission</h2>
-                        </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="about-details">
-                            <p class="pear1">We believe that every project existing in digital world is a result of an idea and every idea has a cause. </p>
-                            <p class="pear2">Amet, consectetur adipisicing elit, sed dosmod tempor didunt ut labore et dolor dfagna iqus ad minim veniam quis. sectetur adipisicing eld do eiusmod tempor didunt ut labore et dolore magna aliqus ad minim.</p>
-                            <p class="pear2">Amet, consectetur adipisicing elit, sed dosmod tempor didunt ut labore et dolor dfagna iqus ad minim veniam quis. sectetur adipisicing eld do eiusmod tempor didunt ut labore et dolore magna aliqus ad minim.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- About Details End -->
-
+                </th>
+                <th>
+                    <br>
+                    <br>
+                    <br>
+                </th>
+            </thead>
+            <tbody>
+                <?php foreach ($chart as $key => $value) { ?>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img src="/assets/images/chart/<?= $value['foto']; ?>" width="200px"> </td>
+                    <td><?= $value['icao']; ?></td>
+                    <td><?= $value['bandara']; ?></td>
+                    <td><button type="button" class="btn btn-primary">Detail</button></td>
+            </tbody>
+        <?php } ?>
+        </table>
     </main>
+
     <footer>
         <!-- Footer Start-->
         <div class="footer-area">
