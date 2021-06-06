@@ -48,12 +48,14 @@
                 <th>
                 </th>
                 <th>
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Contoh &#96;Chart&#96;" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                        <div class="input-group-append">
-                            <span class="input-group-text" id="basic-addon2">Cari</span>
+                    <form action="" method="post">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Contoh 'chart'" name="keyword">
+                            <button class="btn btn-danger" type="submit" name="submit">Cari</button>
                         </div>
+                    </form>
                     </div>
+
                     <div class="nomor">
                         <?= $pager->links('chart', 'chart_pagination'); ?></p>
                     </div>
@@ -64,8 +66,8 @@
                     <br>
                 </th>
             </thead>
-            <tbody>
-                <?php foreach ($chart as $key => $value) { ?>
+            <?php foreach ($chart as $key => $value) { ?>
+                <tbody>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -73,8 +75,8 @@
                     <td><?= $value['icao']; ?></td>
                     <td><?= $value['bandara']; ?></td>
                     <td><button type="button" class="btn btn-primary">Detail</button></td>
-            </tbody>
-        <?php } ?>
+                </tbody>
+            <?php } ?>
         </table>
     </main>
 

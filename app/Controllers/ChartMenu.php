@@ -17,21 +17,20 @@ class ChartMenu extends BaseController
 
     public function chartmenu()
     {
-        $currentPage = $this->request->getVar('page_chart') ? $this->request->getVar('page_chart') : 1;
-
+        $currentPage = $this->request->getVar('page_chartmenu') ? $this->request->getVar('page_chartmenu') : 1;
         $keyword = $this->request->getVar('keyword');
         if ($keyword) {
-            $chart = $this->ChartMenuModel->search($keyword);
+            $chartmenu = $this->ChartMenuModel->search($keyword);
         } else {
-            $chart = $this->ChartMenuModel;
+            $chartmenu = $this->ChartMenuModel;
         }
 
         $data = [
             'title' => 'Library | E-Book',
-            'chart' => $chart->paginate(14, 'chart'),
+            'chart' => $chartmenu->paginate(14, 'chart'),
             'pager' => $this->ChartMenuModel->pager,
             'currentPage' => $currentPage
         ];
-        return view('/chart', $data);
+        return view('/chartmenu', $data);
     }
 }
