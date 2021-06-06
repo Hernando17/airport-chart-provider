@@ -33,12 +33,12 @@ class Filters extends BaseConfig
 	 */
 	public $globals = [
 		'before' => [
-			'authFilter' => ['except' => ['/', '/chart', '/login', 'Auth/*', '/chartmenu']]
+			'authFilter' => ['except' => ['/', '/login', 'Auth/*', '/chartmenu']]
 			// 'honeypot',
 			// 'csrf',
 		],
 		'after'  => [
-			'authFilter' => ['except' => ['/', '/login', '/dashboard/*', 'Auth/*', '/chart/*', '/chartmenu']]
+			'authFilter' => ['except' => ['/', '/login', '/dashboard/*', 'Auth/*', '/chart', '/chartmenu']]
 			// 'honeypot',
 		],
 	];

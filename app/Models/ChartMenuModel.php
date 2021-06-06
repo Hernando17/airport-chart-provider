@@ -21,6 +21,6 @@ class ChartMenuModel extends Model
         // $builder->like('ebook', $keyword);
         // return $builder;
 
-        return $this->table('icao')->like('bandara', $keyword)->orLike('foto', $keyword)->orLike('keterangan', $keyword);
+        return $this->table('chart')->like('bandara', $keyword)->orLike('keterangan', $keyword)->orLike('icao', $keyword);
     }
 }

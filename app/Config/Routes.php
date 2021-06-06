@@ -32,7 +32,7 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-$routes->get('/chartmenu', 'ChartMenu::chartmenu');
+$routes->get('/chartmenu', 'ChartMenu::index');
 $routes->get('/login', 'Login::index');
 
 $routes->get('/dashboard/index', 'Dashboard::index');
@@ -48,8 +48,9 @@ $routes->get('/chart/create', 'Chart::create');
 $routes->get('/chart/detail/edit/(:segment)', 'Chart::edit/$1');
 $routes->delete('/chart/(:num)', 'Chart::delete/$1');
 $routes->get('/chart/detail/(:any)', 'Chart::detail/$1');
+
 /*
- * --------------------------------------------------------------------
+* --------------------------------------------------------------------
  * Additional Routing
  * --------------------------------------------------------------------
  *
