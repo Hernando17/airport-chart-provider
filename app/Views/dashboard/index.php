@@ -58,6 +58,10 @@
                             <a href="/auth/logout" style="margin-right: 50px;" data-toggle="modal" data-target="#logoutModal">
                                 Logout
                             </a>
+                            <hr>
+                            <a href="/" style="margin-right: 50px;" data-toggle="modal" data-target="#logoutModal">
+                                Kembali ke Beranda
+                            </a>
                         </div>
                     </div>
                 </div>
