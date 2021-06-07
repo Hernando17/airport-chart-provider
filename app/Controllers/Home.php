@@ -13,7 +13,7 @@ class Home extends BaseController
 	public function index()
 	{
 		$data = [
-			'title' => 'PGC | Beranda'
+			'title' => 'PGIC | Beranda'
 		];
 
 		return view('/main/index', $data);
