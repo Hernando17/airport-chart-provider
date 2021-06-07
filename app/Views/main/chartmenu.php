@@ -42,6 +42,7 @@
                     <br>
                     <br>
                     <br>
+                    <br>
                 </th>
                 <th>
                 </th>
@@ -50,7 +51,7 @@
                 <th>
                     <form action="" method="post">
                         <div class="input-group mb-3">
-                            <input type="text" class="" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2" name="keyword">
+                            <input type="text" class="" placeholder="Cari Bandara" aria-label="Recipient's username" aria-describedby="basic-addon2" name="keyword">
                             <div class="input-group-append">
                                 <button class="btn btn-outline-secondary" type="submit" name="submit">Cari</button>
                             </div>
@@ -76,7 +77,7 @@
                     <td><img src="/assets/images/chart/<?= $value['foto']; ?>" width="200px"> </td>
                     <td><?= $value['icao']; ?></td>
                     <td><?= $value['bandara']; ?></td>
-                    <td><button type="button" class="btn btn-primary">Detail</button></td>
+                    <td><a href="/ChartMenu/chartdetail/<?= $value['slug']; ?>" type="button" class="btn btn-primary">Detail</a></td>
                 </tbody>
             <?php } ?>
         </table>
