@@ -58,10 +58,6 @@
                         </div>
                     </form>
                     </div>
-
-                    <div class="nomor">
-                        <?= $pager->links('chart', 'chart_pagination'); ?></p>
-                    </div>
                 </th>
                 <th>
                     <br>
@@ -74,7 +70,7 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td><img src="/assets/images/chart/<?= $value['foto']; ?>" width="200px"> </td>
+                    <td><img src="/assets/images/chart/<?= $value['foto']; ?>" class="img-fluid" width="200px" height="100px"> </td>
                     <td><?= $value['icao']; ?></td>
                     <td><?= $value['bandara']; ?></td>
                     <td><a href="/chartdetail/<?= $value['slug']; ?>" type="button" class="btn btn-primary">Detail</a></td>
@@ -82,7 +78,6 @@
             <?php } ?>
         </table>
     </main>
-
     <footer>
         <!-- Footer Start-->
         <div class="footer-area">
