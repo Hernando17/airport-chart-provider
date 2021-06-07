@@ -27,7 +27,7 @@ class ChartMenu extends BaseController
 
         $data = [
             'title' => 'PGI | Chart',
-            'chartmenu' => $chartmenu->paginate(1000, 'chart'),
+            'chartmenu' => $chartmenu->paginate(100000, 'chart'),
             'pager' => $this->ChartMenuModel->pager,
             'currentPage' => $currentPage
         ];
