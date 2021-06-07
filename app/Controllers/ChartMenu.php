@@ -26,7 +26,7 @@ class ChartMenu extends BaseController
         }
 
         $data = [
-            'title' => 'Library | E-Book',
+            'title' => 'PGI | Chart',
             'chartmenu' => $chartmenu->paginate(1000, 'chart'),
             'pager' => $this->ChartMenuModel->pager,
             'currentPage' => $currentPage
@@ -37,15 +37,14 @@ class ChartMenu extends BaseController
     public function chartdetail($slug)
     {
         $data = [
-            'title' => 'Detail Buku',
-            'chart' => $this->ChartMenuModel->getChartMenu($slug)
+            'title' => 'PGI | Detail Chart',
+            'chart' => $this->ChartModel->getChart($slug)
         ];
 
         //jika buku tidak ada di tabel
         if (empty($data['chart'])) {
-            throw new \CodeIgniter\Exceptions\PageNotFoundException('Data Buku ' . $slug . ' tidak ditemukan');
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Data Chart ' . $slug . ' tidak ditemukan');
         }
-
-        return view('main/detail', $data);
+        return view('main/chartdetail', $data);
     }
 }
