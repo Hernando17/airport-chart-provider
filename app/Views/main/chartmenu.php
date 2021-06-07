@@ -77,7 +77,7 @@
                     <td><img src="/assets/images/chart/<?= $value['foto']; ?>" width="200px"> </td>
                     <td><?= $value['icao']; ?></td>
                     <td><?= $value['bandara']; ?></td>
-                    <td><a href="/ChartMenu/chartdetail/<?= $value['slug']; ?>" type="button" class="btn btn-primary">Detail</a></td>
+                    <td><a href="/chartdetail/<?= $value['slug']; ?>" type="button" class="btn btn-primary">Detail</a></td>
                 </tbody>
             <?php } ?>
         </table>
