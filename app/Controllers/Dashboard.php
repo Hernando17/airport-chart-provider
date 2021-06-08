@@ -36,6 +36,9 @@ class Dashboard extends BaseController
             'currentPage' => $currentPage
         ];
 
+        if (empty($data['user'])) {
+            session()->setFlashdata('alert', 'Data ' . $keyword . ' tidak ditemukan');
+        }
         return view('dashboard/pengguna', $data);
     }
 
@@ -61,7 +64,7 @@ class Dashboard extends BaseController
             'title' => 'Dasbor | Beranda',
             'tot_user' => $this->CountModel->tot_user(),
             'tot_chart' => $this->CountModel->tot_chart(),
-            'user' => $orang->paginate(10, 'user'),
+            'user' => $orang->paginate(100000000000, 'user'),
             'pager' => $this->DashboardModel->pager,
             'currentPage' => $currentPage
         ];

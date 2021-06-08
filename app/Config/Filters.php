@@ -38,7 +38,7 @@ class Filters extends BaseConfig
 			// 'csrf',
 		],
 		'after'  => [
-			'authFilter' => ['except' => ['/', '/login', '/dashboard/*', 'Auth/*', '/chart', '/chartmenu']]
+			'authFilter' => ['except' => ['/', '/login', '/dashboard/*', 'Auth/*', '/chart/*', '/chartmenu']]
 			// 'honeypot',
 		],
 	];

@@ -26,7 +26,20 @@
                                     <?= session()->getFlashdata('pesan'); ?>
                                 </div>
                             <?php endif; ?>
+                            <?php if (session()->getFlashdata('alert')) : ?>
+                                <div class="alert alert-danger" role="alert">
+                                    <?= session()->getFlashdata('alert'); ?>
+                                </div>
+                            <?php endif; ?>
                             <a href="/Dashboard/create" class="mb-4 btn btn-success fas fa-user-plus" style="float:right; margin-right:20px;margin-top:20px;"></a>
+                            <form action="" method="post">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="" placeholder="Cari Pengguna" aria-label="Recipient's username" aria-describedby="basic-addon2" name="keyword" style="margin-left:20px;">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary" type="submit" name="submit">Cari</button>
+                                    </div>
+                                </div>
+                            </form>
                             <table class="table table-bordered mb-0">
                                 <thead>
                                     <tr>
