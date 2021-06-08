@@ -7,7 +7,7 @@
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
                 <div class="preloader-img pere-text">
-                    <img src="assets/img/logo/loder.jpg" alt="">
+                    <img src="assets/images/logo/pilotgamingindo.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -270,7 +270,7 @@
                                 <div class="single-footer-caption mb-30">
                                     <!-- logo -->
                                     <div class="footer-logo">
-                                        <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
+                                        <a href="index.html"><img src="assets/images/logo/pgic.png" alt=""></a>
                                     </div>
                                 </div>
                             </div>
@@ -310,18 +310,16 @@
                         <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
                             <div class="single-footer-caption mb-50">
                                 <div class="footer-tittle">
-                                    <h4><span>+564</span> 7885 3222</h4>
                                     <ul>
-                                        <li><a href="#">youremail@gmail.com</a></li>
+                                        <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSDbtzQMgkGsZCfzDXbXFFZFHFdKMNqrSsFdPnpnxPkglcGpVRpLBXsvPwRPLMXQVbKNvxNr">xbrtgaming@gmail.com</a></li>
                                     </ul>
-                                    <p>123 East 26th Street, Fifth Floor, New York, NY 10011</p>
                                 </div>
                                 <!-- footer social -->
                                 <div class="footer-social">
-                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fas fa-globe"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.youtube.com/channel/UCTEmF5ryohcWr9nYm01uvWA"><i class="fab fa-youtube"></i></a>
+                                    <!-- <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fas fa-globe"></i></a> -->
+                                    <a href="https://www.instagram.com/theo_valdi/"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>

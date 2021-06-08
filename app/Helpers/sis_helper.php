@@ -2,7 +2,7 @@
 
 use App\Models\AuthModel;
 
-function allow($role)
+function allow($level)
 {
     $session = \Config\Services::session();
     $user = $session->get('username');
@@ -10,7 +10,7 @@ function allow($role)
     $model = new AuthModel;
     $row = $model->get_data_login($user, $tabel);
     if ($row != NULL) {
-        if ($row->role == $role) {
+        if ($row->level == $level) {
             return true;
         } else {
             return false;
