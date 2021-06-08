@@ -8,7 +8,7 @@
                         <!-- Logo -->
                         <div class="col-xl-2 col-lg-1 col-md-1">
                             <div class="logo">
-                                <a href="index.html"><img src="<?= base_url(); ?>/assets/img/logo/logo.png" alt=""></a>
+                                <a href="index.html"><img src="<?= base_url(); ?>/assets/images/logo/pgic.png" alt=""></a>
                             </div>
                         </div>
                         <div class="col-xl-8 col-lg-8 col-md-8">
@@ -31,6 +31,24 @@
                                 </nav>
                             </div>
                         </div>
+                        <?php if (allow('master')) : ?>
+
+                            <div class="col-xl-2 col-lg-3 col-md-3">
+                                <div class="header-right-btn f-right d-none d-lg-block">
+                                    <a href="/dashboard/index" class="btn header-btn">Dasbor</a>
+                                </div>
+                            </div>
+
+                        <?php endif; ?>
+                        <?php if (allow('admin')) : ?>
+
+                            <div class="col-xl-2 col-lg-3 col-md-3">
+                                <div class="header-right-btn f-right d-none d-lg-block">
+                                    <a href="/dashboard/index" class="btn header-btn">Dasbor</a>
+                                </div>
+                            </div>
+
+                        <?php endif; ?>
                         <!-- Mobile Menu -->
                         <div class="col-12">
                             <div class="mobile_menu d-block d-lg-none"></div>

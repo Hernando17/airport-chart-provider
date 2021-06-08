@@ -7,7 +7,7 @@
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
                 <div class="preloader-img pere-text">
-                    <img src="assets/img/logo/loder.jpg" alt="">
+                    <img src="assets/images/logo/pilotgamingindo.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -92,7 +92,7 @@
                                 <div class="single-footer-caption mb-30">
                                     <!-- logo -->
                                     <div class="footer-logo">
-                                        <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
+                                        <a href="index.html"><img src="assets/images/logo/pgic.png" alt=""></a>
                                     </div>
                                 </div>
                             </div>
@@ -100,46 +100,48 @@
                         <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
                             <div class="single-footer-caption mb-50">
                                 <div class="footer-tittle">
-                                    <h4>Services</h4>
+                                    <h4>Halaman</h4>
                                     <ul>
-                                        <li><a href="#">Marketing</a></li>
-                                        <li><a href="#"> SEO Service</a></li>
-                                        <li><a href="#">Digital market</a></li>
-                                        <li><a href="#">Content create</a></li>
-                                        <li><a href="#">Find Us</a></li>
+                                        <li><a href="/">Beranda</a></li>
+                                        <li><a href="#">Tentang</a></li>
+                                        <li><a href="#">Addon</a></li>
+                                        <li><a href="#">Panduan</a></li>
+                                        <li><a href="/chartmenu">Chart</a></li>
+                                        <li><a href="#">Flight Simulator</a></li>
+                                        <li><a href="#">Donasi</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                        <!-- <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
                             <div class="single-footer-caption mb-50">
                                 <div class="footer-tittle">
-                                    <h4>Customer Care</h4>
+                                    <h4>Halaman</h4>
                                     <ul>
-                                        <li><a href="#">Contact Us</a></li>
-                                        <li><a href="#">About Us</a></li>
-                                        <li><a href="#">News & Articles</a></li>
-                                        <li><a href="#">Privacy Policy</a></li>
-                                        <li><a href="#"> Terms of Use</a></li>
+                                        <li><a href="#">Beranda</a></li>
+                                        <li><a href="#">Tentang</a></li>
+                                        <li><a href="#">Addon</a></li>
+                                        <li><a href="#">Panduan</a></li>
+                                        <li><a href="#">Chart</a></li>
+                                        <li><a href="#">Flight Simulator</a></li>
+                                        <li><a href="#">Donasi</a></li>
                                     </ul>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
                             <div class="single-footer-caption mb-50">
                                 <div class="footer-tittle">
-                                    <h4><span>+564</span> 7885 3222</h4>
                                     <ul>
-                                        <li><a href="#">youremail@gmail.com</a></li>
+                                        <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSDbtzQMgkGsZCfzDXbXFFZFHFdKMNqrSsFdPnpnxPkglcGpVRpLBXsvPwRPLMXQVbKNvxNr">xbrtgaming@gmail.com</a></li>
                                     </ul>
-                                    <p>123 East 26th Street, Fifth Floor, New York, NY 10011</p>
                                 </div>
                                 <!-- footer social -->
                                 <div class="footer-social">
-                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fas fa-globe"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.youtube.com/channel/UCTEmF5ryohcWr9nYm01uvWA"><i class="fab fa-youtube"></i></a>
+                                    <!-- <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fas fa-globe"></i></a> -->
+                                    <a href="https://www.instagram.com/theo_valdi/"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -153,7 +155,7 @@
                                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                                     Copyright &copy;<script>
                                         document.write(new Date().getFullYear());
-                                    </script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                                    </script> Pilot Gaming Indo All rights reserved <br>| This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
                                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                                 </p>
                             </div>
