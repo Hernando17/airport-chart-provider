@@ -36,10 +36,14 @@ class Chart extends BaseController
 
         $data = [
             'title' => 'Dasbor | Data Chart',
-            'chart' => $flight->paginate(10, 'chart'),
+            'chart' => $flight->paginate(100000, 'chart'),
             'pager' => $this->ChartModel->pager,
             'currentPage' => $currentPage
         ];
+
+        if (empty($data['chart'])) {
+            session()->setFlashdata('alert', 'Data ' . $keyword . ' tidak ditemukan');
+        }
 
         return view('/chart/index', $data);
     }
@@ -51,7 +55,6 @@ class Chart extends BaseController
             'title' => 'Dasbor | Detail Chart',
             'chart' => $this->ChartModel->getChart($slug)
         ];
-
 
         //jika pengguna tidak ada di tabel
         if (empty($data['chart'])) {
