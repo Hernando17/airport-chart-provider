@@ -104,10 +104,7 @@
                                     <ul>
                                         <li><a href="/">Beranda</a></li>
                                         <li><a href="#">Tentang</a></li>
-                                        <li><a href="#">Addon</a></li>
-                                        <li><a href="#">Panduan</a></li>
-                                        <li><a href="/chartmenu">Chart</a></li>
-                                        <li><a href="#">Flight Simulator</a></li>
+                                        <li><a href="#">Livery</a></li>
                                         <li><a href="#">Donasi</a></li>
                                     </ul>
                                 </div>
