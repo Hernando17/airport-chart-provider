@@ -32,7 +32,7 @@
                                     <div class="col">
                                         <h2 class="mt-2">Detail Chart</h2>
                                         <div class="card-body">
-                                            <img src="/assets/images/chart/<?= $chart['foto']; ?>" class="img-fluid">
+                                            <img src="/assets/images/chart/<?= $chart['foto']; ?>" width="300px" height="200px">
                                             <br>
                                             <br>
                                             <h5>
