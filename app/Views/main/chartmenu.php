@@ -68,7 +68,7 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td><img src="/assets/images/chart/<?= $value['foto']; ?>" class="img-fluid" width="200px" height="100px"> </td>
+                    <td><img src="/assets/images/chart/<?= $value['foto']; ?>" class="img-fluid" width="200px" height="100px"><br><br></td>
                     <td><?= $value['icao']; ?></td>
                     <td><?= $value['bandara']; ?></td>
                     <td><a href="/chartdetail/<?= $value['slug']; ?>" type="button" class="btn btn-primary">Detail</a></td>
