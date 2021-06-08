@@ -37,7 +37,7 @@
         </div>
         <!-- slider Area End-->
         <!-- Want To Work Start -->
-        <div class="wantToWork-area w-padding">
+        <!-- <div class="wantToWork-area w-padding">
             <div class="container">
                 <div class="row align-items-end">
                     <div class="col-xl-5 col-lg-7 col-md-8">
@@ -53,7 +53,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Want To Work End -->
         <!-- Our Services Start -->
         <div class="our-services  pt-50 pb-150">
@@ -66,7 +66,7 @@
                             </div>
                             <div class="services-cap">
                                 <h5>Gratis</h5>
-                                <p>Kami menyediakan segala kebutuhan yang berhubungan dengan Flight Simulator secara gratis</p>
+                                <p>Kami menyediakan segala kebutuhan Flight Simulator secara gratis</p>
                             </div>
                         </div>
                     </div>
@@ -128,7 +128,7 @@
                                 <p>Flight Simulator 2020</p><span>50%</span>
                             </div>
                             <div class="progress">
-                                <div class="progress-bar wow slideInLeft" data-wow-duration="1s" data-wow-delay=".6s" role="progressbar" style="width: 95%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar wow slideInLeft" data-wow-duration="1s" data-wow-delay=".6s" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
@@ -150,16 +150,18 @@
                                 <div class="testimonial-caption ">
                                     <div class="testimonial-top-cap">
                                         <img src="assets/img/icon/testimonial.png" alt="">
-                                        <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis por incididunt ut labore et dolore mas. </p>
+                                        <p>
+                                            Saya memiliki perhitungan yang membandingkan biaya satu kilo pesawat dan satu kilo beras. Satu kilo pesawat berharga 30 ribu dolar AS dan satu kilo beras berharga 7 sen. Dan jika Anda ingin membayar satu kilo produk dengan teknologi tinggi dengan satu kilo beras, saya rasa kita tidak akan cukup.
+                                        </p>
                                     </div>
                                     <!-- founder -->
                                     <div class="testimonial-founder d-flex align-items-center justify-content-center">
                                         <div class="founder-img">
-                                            <img src="assets/img/testmonial/Homepage_testi.png" alt="">
+                                            <img src="assets/img/testmonial/habibie.png" class="rounded-circle" width="70px" height=70px" alt="">
                                         </div>
                                         <div class="founder-text">
-                                            <span>Oliva jems</span>
-                                            <p>UIX designer</p>
+                                            <span>B. J. Habibie</span>
+                                            <p>Presiden Republik Indonesia ke-3</p>
                                         </div>
                                     </div>
                                 </div>
@@ -245,11 +247,11 @@
                 <div class="row align-items-center justify-content-between">
                     <div class="col-xl-8 col-lg-8 col-md-8">
                         <div class="wantToWork-caption wantToWork-caption2">
-                            <h2>Send us a message if you have an issue with your order.</h2>
+                            <h2>Dukung kami dengan cara memberi kami donasi</h2>
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-4">
-                        <a href="#" class="btn btn-black f-right">contact us now</a>
+                        <a href="#" class="btn btn-black f-right">Donasi</a>
                     </div>
                 </div>
             </div>
@@ -276,31 +278,35 @@
                         <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
                             <div class="single-footer-caption mb-50">
                                 <div class="footer-tittle">
-                                    <h4>Services</h4>
+                                    <h4>Halaman</h4>
                                     <ul>
-                                        <li><a href="#">Marketing</a></li>
-                                        <li><a href="#"> SEO Service</a></li>
-                                        <li><a href="#">Digital market</a></li>
-                                        <li><a href="#">Content create</a></li>
-                                        <li><a href="#">Find Us</a></li>
+                                        <li><a href="/">Beranda</a></li>
+                                        <li><a href="#">Tentang</a></li>
+                                        <li><a href="#">Addon</a></li>
+                                        <li><a href="#">Panduan</a></li>
+                                        <li><a href="/chartmenu">Chart</a></li>
+                                        <li><a href="#">Flight Simulator</a></li>
+                                        <li><a href="#">Donasi</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                        <!-- <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
                             <div class="single-footer-caption mb-50">
                                 <div class="footer-tittle">
-                                    <h4>Customer Care</h4>
+                                    <h4>Halaman</h4>
                                     <ul>
-                                        <li><a href="#">Contact Us</a></li>
-                                        <li><a href="#">About Us</a></li>
-                                        <li><a href="#">News & Articles</a></li>
-                                        <li><a href="#">Privacy Policy</a></li>
-                                        <li><a href="#"> Terms of Use</a></li>
+                                        <li><a href="#">Beranda</a></li>
+                                        <li><a href="#">Tentang</a></li>
+                                        <li><a href="#">Addon</a></li>
+                                        <li><a href="#">Panduan</a></li>
+                                        <li><a href="#">Chart</a></li>
+                                        <li><a href="#">Flight Simulator</a></li>
+                                        <li><a href="#">Donasi</a></li>
                                     </ul>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
                             <div class="single-footer-caption mb-50">
                                 <div class="footer-tittle">
@@ -329,7 +335,7 @@
                                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                                     Copyright &copy;<script>
                                         document.write(new Date().getFullYear());
-                                    </script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                                    </script> Pilot Gaming Indo All rights reserved <br>| This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
                                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                                 </p>
                             </div>
@@ -344,7 +350,6 @@
     <div id="back-top">
         <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
     </div>
-
 
     <!-- JS here -->
     <!-- All JS Custom Plugins Link Here here -->

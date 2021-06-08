@@ -32,7 +32,7 @@
 
                 <li class="sidebar-item  ">
                     <a href="/chart/index" class='sidebar-link'>
-                        <i class="bi bi-grid-1x2-fill"></i>
+                        <i class="bi bi-newspaper"></i>
                         <span>Data Chart</span>
                     </a>
                 </li>
