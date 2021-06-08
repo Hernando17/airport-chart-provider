@@ -7,7 +7,7 @@
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
                 <div class="preloader-img pere-text">
-                    <img src="assets/img/logo/loder.jpg" alt="">
+                    <img src="/assets/images/logo/pilotgamingindo.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -66,7 +66,7 @@
                                 <div class="single-footer-caption mb-30">
                                     <!-- logo -->
                                     <div class="footer-logo">
-                                        <a href="index.html"><img src="assets/images/logo/pgic.png" alt=""></a>
+                                        <a href="index.html"><img src="/assets/images/logo/pgic.png" alt=""></a>
                                     </div>
                                 </div>
                             </div>
@@ -78,10 +78,7 @@
                                     <ul>
                                         <li><a href="/">Beranda</a></li>
                                         <li><a href="#">Tentang</a></li>
-                                        <li><a href="#">Addon</a></li>
-                                        <li><a href="#">Panduan</a></li>
-                                        <li><a href="/chartmenu">Chart</a></li>
-                                        <li><a href="#">Flight Simulator</a></li>
+                                        <li><a href="#">Livery</a></li>
                                         <li><a href="#">Donasi</a></li>
                                     </ul>
                                 </div>

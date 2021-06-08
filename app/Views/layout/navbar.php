@@ -17,16 +17,19 @@
                                 <nav>
                                     <ul id="navigation">
                                         <li><a href="/">Beranda</a></li>
-                                        <li><a href="#">Tentang</a></li>
-                                        <li><a href="#">Addon</a></li>
-                                        <li><a href="#">Panduan</a></li>
+                                        <li><a href="/tentang">Tentang</a></li>
+                                        <li><a href="/livery">Livery</a></li>
                                         <li><a href="/chartmenu">Chart</a></li>
-                                        <li><a href="#">Flight Simulator</a>
+                                        <li><a href="#">Addon</a>
                                             <ul class="submenu">
-                                                <li><a href="#">X-Plane 11</a></li>
+                                                <li><a href="/xplane11">X-Plane 11</a></li>
+                                                <li><a href="/prepar3d">Prepar3D</a></li>
+
+
+                                                <li><a href="/fs2020">FS2020</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="#">Donasi</a></li>
+                                        <li><a href="/donasi">Donasi</a></li>
                                     </ul>
                                 </nav>
                             </div>

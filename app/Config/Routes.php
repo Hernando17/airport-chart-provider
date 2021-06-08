@@ -32,6 +32,12 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
+$routes->get('/tentang', 'Home::tentang');
+$routes->get('/livery', 'Home::livery');
+$routes->get('/xplane11', 'Home::xplane11');
+$routes->get('/prepar3d', 'Home::prepar3d');
+$routes->get('/fs2020', 'Home::fs2020');
+$routes->get('/donasi', 'Home::donasi');
 $routes->get('/chartmenu', 'ChartMenu::index');
 $routes->get('/chartdetail/(:any)', 'ChartMenu::chartdetail/$1');
 $routes->get('/login', 'Login::index');

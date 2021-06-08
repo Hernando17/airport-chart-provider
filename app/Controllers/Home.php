@@ -18,4 +18,52 @@ class Home extends BaseController
 
 		return view('/main/index', $data);
 	}
+	public function tentang()
+	{
+		$data = [
+			'title' => 'PGIC | Beranda'
+		];
+
+		return view('/errors/html/error_404', $data);
+	}
+	public function livery()
+	{
+		$data = [
+			'title' => 'PGIC | Beranda'
+		];
+
+		return view('/errors/html/error_404', $data);
+	}
+	public function xplane11()
+	{
+		$data = [
+			'title' => 'PGIC | Beranda'
+		];
+
+		return view('/errors/html/error_404', $data);
+	}
+	public function prepar3d()
+	{
+		$data = [
+			'title' => 'PGIC | Beranda'
+		];
+
+		return view('/errors/html/error_404', $data);
+	}
+	public function fs2020()
+	{
+		$data = [
+			'title' => 'PGIC | Beranda'
+		];
+
+		return view('/errors/html/error_404', $data);
+	}
+	public function donasi()
+	{
+		$data = [
+			'title' => 'PGIC | Beranda'
+		];
+
+		return view('/errors/html/error_404', $data);
+	}
 }
