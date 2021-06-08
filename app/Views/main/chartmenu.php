@@ -49,13 +49,18 @@
                 <th>
                     <form action="" method="post">
                         <div class="input-group mb-3">
-                            <input type="text" class="" placeholder="Cari Bandara" aria-label="Recipient's username" aria-describedby="basic-addon2" name="keyword">
+                            <input type="text" class="" placeholder="Cari Bandara" name="keyword">
                             <div class="input-group-append">
                                 <button class="btn btn-outline-secondary" type="submit" name="submit">Cari</button>
                             </div>
                         </div>
                     </form>
                     </div>
+                    <?php if (session()->getFlashdata('alert')) : ?>
+                        <div class="alert alert-danger" role="alert">
+                            <?= session()->getFlashdata('alert'); ?>
+                        </div>
+                    <?php endif; ?>
                 </th>
                 <th>
                     <br>

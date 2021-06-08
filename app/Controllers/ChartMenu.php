@@ -31,6 +31,10 @@ class ChartMenu extends BaseController
             'pager' => $this->ChartMenuModel->pager,
             'currentPage' => $currentPage
         ];
+
+        if (empty($data['chartmenu'])) {
+            session()->setFlashdata('alert', 'Data ' . $keyword . ' tidak ditemukan');
+        }
         return view('/main/chartmenu', $data);
     }
 

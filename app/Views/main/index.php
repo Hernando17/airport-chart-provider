@@ -102,7 +102,7 @@
             <div class="tailor-offers"></div>
             <!-- left Contents -->
             <div class="tailor-details">
-                <span>All of our Skills In The Fild</span>
+                <span>Data Keseluruhan website</span>
                 <h3>Popularitas <br>Flight Simulator</h3>
                 <!-- skill Start -->
                 <div class="skill-ara">
@@ -197,8 +197,8 @@
             <!-- left Contents -->
             <div class="starups">
                 <div class="starups-details">
-                    <span>Features That You Will Get</span>
-                    <h3>All startups need to make<br>their business work</h3>
+                    <span>Fitur yang anda dapatkan</span>
+                    <h3>Website yang kami sediakan bersifat terbuka</h3>
                     <!-- Details -->
                     <div class="starups-list">
                         <ul>
@@ -209,7 +209,7 @@
                                 </svg>
                             </li>
                             <li>
-                                <p>Having a home based business is a wonderful asset to your life. The problem still stands,</p>
+                                <p>Pelanggan dapat mengirimkan Addon buatannya agar dapat ditampilkan di website ini</p>
                             </li>
                         </ul>
                         <ul>
@@ -220,7 +220,7 @@
                                 </svg>
                             </li>
                             <li>
-                                <p>Promotional Advertising Specialty You Ve Waited Long Enough</p>
+                                <p>Addon yang kami tampilkan merupakan Addon telah melewati uji tes kami</p>
                             </li>
                         </ul>
                         <ul>
@@ -231,7 +231,7 @@
                                 </svg>
                             </li>
                             <li>
-                                <p>Direct Mail Advertising How I Made 47 325 In 30 Days By Mailing 2 200 Letters</p>
+                                <p>Website ini menyediakan segala kebutuhan Flight Simulator secara lengkap, seperti Chart, addons, Dll</p>
                             </li>
                         </ul>
                     </div>
